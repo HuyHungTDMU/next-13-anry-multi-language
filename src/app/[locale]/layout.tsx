@@ -1,15 +1,16 @@
-import clsx from 'clsx';
-import {Inter} from 'next/font/google';
-import {notFound} from 'next/navigation';
-import {createTranslator, NextIntlClientProvider} from 'next-intl';
-import {ReactNode} from 'react';
-import Navigation from 'components/Navigation';
+import clsx from "clsx";
+import { Inter } from "next/font/google";
+import { notFound } from "next/navigation";
+import { createTranslator, NextIntlClientProvider } from "next-intl";
+import { ReactNode } from "react";
+import NavBar from "../../components/NavBar";
+import Footer from "../../components/Footer";
 
-const inter = Inter({subsets: ['latin']});
+const inter = Inter({ subsets: ["latin"] });
 
 type Props = {
   children: ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 };
 
 async function getMessages(locale: string) {
@@ -21,34 +22,37 @@ async function getMessages(locale: string) {
 }
 
 export async function generateStaticParams() {
-  return ['vn', 'en', 'jp'].map((locale) => ({locale}));
+  return ["vn", "en", "jp"].map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({params: {locale}}: Props) {
+export async function generateMetadata({ params: { locale } }: Props) {
   const messages = await getMessages(locale);
 
   // You can use the core (non-React) APIs when you have to use next-intl
   // outside of components. Potentially this will be simplified in the future
   // (see https://next-intl-docs.vercel.app/docs/next-13/server-components).
-  const t = createTranslator({locale, messages});
+  const t = createTranslator({ locale, messages });
 
   return {
-    title: t('LocaleLayout.title')
+    title: t("LocaleLayout.title"),
   };
 }
 
 export default async function LocaleLayout({
   children,
-  params: {locale}
+  params: { locale },
 }: Props) {
   const messages = await getMessages(locale);
 
   return (
     <html className="h-full" lang={locale}>
-      <body className={clsx(inter.className, 'flex h-full flex-col')}>
+      <body className={clsx(inter.className)}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Navigation />
-          {children}
+          <div className="flex h-auto flex-col gap-2">
+            <NavBar />
+            {children}
+            <Footer />
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

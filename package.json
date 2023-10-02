@@ -12,11 +12,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@motionone/utils": "^10.16.3",
     "clsx": "^1.2.1",
+    "framer-motion": "^10.16.4",
     "next": "13.5.1",
     "next-intl": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-slideshow-image": "^4.2.1",
     "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
