@@ -6,6 +6,7 @@ import AnimatedText from "../../../components/AnimatedText";
 import imgBanner from "../../../../public/images/banner.jpg";
 import { useEffect, useState } from "react";
 import { apiFetchNews } from "../../../lib/api-request";
+import Loading from "../../../components/Loading";
 
 export default function NewsPage() {
   const [data, setData] = useState<any>([]);
@@ -40,7 +41,11 @@ export default function NewsPage() {
           className="!-mt-12 !font-bold !text-[#2c7873]"
         />
 
-        <div dangerouslySetInnerHTML={{ __html: data }} />
+        {!data ? (
+          <div dangerouslySetInnerHTML={{ __html: data }} />
+        ) : (
+          <Loading />
+        )}
       </div>
     </PageLayout>
   );

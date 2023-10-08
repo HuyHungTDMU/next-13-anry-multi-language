@@ -5,6 +5,7 @@ import AnimatedText from "../../../components/AnimatedText";
 import { useEffect, useState } from "react";
 import { FeatureProject } from "../../../components/FeatureProject";
 import { apiFetchProjects } from "../../../lib/api-request";
+import Loading from "../../../components/Loading";
 
 export default function ProjectsPage() {
   const [data, setData] = useState<any>([]);
@@ -29,16 +30,20 @@ export default function ProjectsPage() {
 
         <div className="mt-4 flex flex-col items-center justify-center ">
           <div className="grid grid-cols-1 xl:grid-cols-2 justify-between gap-12">
-            {data.map((item: any, index: number) => (
-              <FeatureProject
-                key={index}
-                type={item.subTitle}
-                title={item.title}
-                img={item.image}
-                link={item.link}
-                summary={item.summary}
-              />
-            ))}
+            {data ? (
+              data.map((item: any, index: number) => (
+                <FeatureProject
+                  key={index}
+                  type={item.subTitle}
+                  title={item.title}
+                  img={item.image}
+                  link={item.link}
+                  summary={item.summary}
+                />
+              ))
+            ) : (
+              <Loading />
+            )}
           </div>
         </div>
       </div>

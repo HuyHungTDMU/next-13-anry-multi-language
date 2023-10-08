@@ -5,6 +5,7 @@ import AnimatedText from "../../../components/AnimatedText";
 import { useEffect, useState } from "react";
 import { apiFetchProducts } from "../../../lib/api-request";
 import { ProductItem } from "../../../components/ProductItem";
+import Loading from "../../../components/Loading";
 
 export default function ProductsPage() {
   const [data, setData] = useState<any>([]);
@@ -32,16 +33,20 @@ export default function ProductsPage() {
 
         <div className="mt-4 flex flex-col items-center justify-center ">
           <div className="grid grid-cols-2 xs:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 justify-between gap-7">
-            {data.map((item: any, index: number) => (
-              <ProductItem
-                key={index}
-                type={item.subTitle}
-                title={item.title}
-                img={item.image}
-                link={item.link}
-                summary={item.summary}
-              />
-            ))}
+            {data ? (
+              data.map((item: any, index: number) => (
+                <ProductItem
+                  key={index}
+                  type={item.subTitle}
+                  title={item.title}
+                  img={item.image}
+                  link={item.link}
+                  summary={item.summary}
+                />
+              ))
+            ) : (
+              <Loading />
+            )}
           </div>
         </div>
       </div>
