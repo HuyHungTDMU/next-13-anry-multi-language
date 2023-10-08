@@ -18,11 +18,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 import imgMuongThanh from "../../../public/images/parners/muong-thanh.png";
-import imgHotel from "../../../public/images/parners/hotel.jpeg";
+import imgHotel from "../../../public/images/parners/parner-2.png";
 import imgPenhau from "../../../public/images/parners/penhau.jpeg";
 import imgResort from "../../../public/images/parners/resort.png";
-import imgMat_tien from "../../../public/images/parners/mat_tien.jpeg";
-import imgPhongNgu from "../../../public/images/parners/phong-ngu.jpeg";
+import imgMat_tien from "../../../public/images/parners/parner-1.png";
+import imgPhongNgu from "../../../public/images/logoJP.jpg";
 import imgPttxvn_ksmuongthanh from "../../../public/images/parners/ttxvn_ksmuongthanh.jpg";
 import imgPhong1 from "../../../public/images/home/phong1.jpeg";
 import imgPhong2 from "../../../public/images/home/phong2.jpeg";
@@ -41,13 +41,14 @@ const MotionImage = motion(Image);
 
 const images = [
   "https://ranemhanquoc.com/profiles/ranemhanquoccom/uploads/logo/1668771201_dai-ly-chan-ga-goi-nem-everon.jpg",
-  "https://ranemhanquoc.com/profiles/ranemhanquoccom/uploads/logo/1668771201_dai-ly-chan-ga-goi-nem-everon.jpg",
 ];
 
 const Slideshow = () => {
   return (
     <div className="slide-container items-center justify-center w-full">
       <Fade
+        canSwipe
+        arrows={false}
         prevArrow={
           <span className="text-dark rounded-full h-7 flex items-center justify-center shadow-2xl w-7 bg-white ml-4">{`<-`}</span>
         }
@@ -136,12 +137,12 @@ function ParallaxText({
 }
 
 export default function IndexPage() {
-  const t = useTranslations("IndexPage");
+  const t = useTranslations("Index");
 
   return (
-    <PageLayout title={t("title")}>
+    <PageLayout>
       <div className="flex items-center text-dark w-full">
-        <div className="w-full h-full inline-block z-0 bg-light pt-12 pb-7 p-7 sm:px-16 lg:px-32">
+        <div className="w-full h-full inline-block z-0 bg-light pb-7 px-7 sm:px-16 lg:px-32">
           <div className="flex flex-col xl:flex-row items-center justify-between w-full gap-7 mt-10">
             <div className="xl:w-1/2 w-full">
               <Slideshow />
@@ -298,6 +299,12 @@ export default function IndexPage() {
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
+                    src={imgHotel}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 1.02 }}
+                    className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
+                  />
+                  <MotionImage
                     src={imgMat_tien}
                     alt="imgMuongThanh"
                     whileHover={{ scale: 1.02 }}
@@ -315,20 +322,8 @@ export default function IndexPage() {
                     whileHover={{ scale: 1.02 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
-                  {/*<MotionImage*/}
-                  {/*  src={imgMelia}*/}
-                  {/*  alt="imgMuongThanh"*/}
-                  {/*  whileHover={{ scale: 1.02 }}*/}
-                  {/*  className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"*/}
-                  {/*/>*/}
                   <MotionImage
                     src={imgPhongNgu}
-                    alt="imgMuongThanh"
-                    whileHover={{ scale: 1.02 }}
-                    className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
-                  />
-                  <MotionImage
-                    src={imgHotel}
                     alt="imgMuongThanh"
                     whileHover={{ scale: 1.02 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"

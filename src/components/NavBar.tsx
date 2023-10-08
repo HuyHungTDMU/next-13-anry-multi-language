@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import { SvgInstagram, SvgMenu, SvgPinterest, SvgTwitter } from "./Icons";
 import { motion } from "framer-motion";
 import LocaleSwitcher from "./LocaleSwitcher";
+import { useTranslations } from "next-intl";
 
 const CustomLink = ({
   href,
@@ -26,7 +27,7 @@ const CustomLink = ({
       {title}
       <span
         className={`inline-block h-[1px] left-0 absolute -bottom-0.5 ease duration-300 group-hover:w-full w-0 ${classHover} 
-        // {router.pathname === href && "w-full"} 
+        //{router. === href && "w-full"} 
         ${scrollActive ? "bg-[#2c7873]" : "bg-white"}`}
       >
         &nbsp;
@@ -36,6 +37,7 @@ const CustomLink = ({
 };
 
 const NavBar = () => {
+  const t = useTranslations("Index");
   const [scrollActive, setScrollActive] = useState(false);
 
   useEffect(() => {
@@ -50,38 +52,40 @@ const NavBar = () => {
         scrollActive && "bg-light shadow-2xl"
       }`}
     >
-      <nav
-        className={`space-x-7 text-ellipsis lg:block hidden ${
-          scrollActive ? "text-[#2c7873]" : "text-white"
-        }`}
-      >
+      <nav className={`space-x-7 text-ellipsis lg:block hidden text-white`}>
         <CustomLink
           href="/"
-          title="Home"
+          title={t("home")}
+          scrollActive={scrollActive}
+          classHover={`${scrollActive && "bg-purple-950"}`}
+        />
+        <CustomLink
+          href="/products"
+          title={t("products")}
           scrollActive={scrollActive}
           classHover={`${scrollActive && "bg-purple-950"}`}
         />
         <CustomLink
           href="/about"
-          title="About"
+          title={t("about")}
           scrollActive={scrollActive}
           classHover={`${scrollActive && "bg-purple-950"}`}
         />
         <CustomLink
           href="/projects"
-          title="Projects"
+          title={t("projects")}
           scrollActive={scrollActive}
           classHover={`${scrollActive && "bg-purple-950"}`}
         />
         <CustomLink
           href="/news"
-          title="News"
+          title={t("news")}
           scrollActive={scrollActive}
           classHover={`${scrollActive && "bg-purple-950"}`}
         />
         <CustomLink
           href="/contact"
-          title="Contact"
+          title={t("contact")}
           scrollActive={scrollActive}
           classHover={`${scrollActive && "bg-purple-950"}`}
         />

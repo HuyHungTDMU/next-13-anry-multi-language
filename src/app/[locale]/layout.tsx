@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
-import { createTranslator, NextIntlClientProvider } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 import { ReactNode } from "react";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
@@ -21,23 +21,6 @@ async function getMessages(locale: string) {
   }
 }
 
-export async function generateStaticParams() {
-  return ["vn", "en", "jp"].map((locale) => ({ locale }));
-}
-
-export async function generateMetadata({ params: { locale } }: Props) {
-  const messages = await getMessages(locale);
-
-  // You can use the core (non-React) APIs when you have to use next-intl
-  // outside of components. Potentially this will be simplified in the future
-  // (see https://next-intl-docs.vercel.app/docs/next-13/server-components).
-  const t = createTranslator({ locale, messages });
-
-  return {
-    title: t("LocaleLayout.title"),
-  };
-}
-
 export default async function LocaleLayout({
   children,
   params: { locale },
@@ -45,10 +28,10 @@ export default async function LocaleLayout({
   const messages = await getMessages(locale);
 
   return (
-    <html className="h-full" lang={locale}>
+    <html className="h-full" lang={locale} suppressHydrationWarning={true}>
       <body className={clsx(inter.className)}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="flex h-auto flex-col gap-2">
+          <div className="flex h-auto flex-col gap-4">
             <NavBar />
             {children}
             <Footer />

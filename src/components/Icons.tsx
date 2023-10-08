@@ -122,8 +122,8 @@ export const SvgPhone = (props: any) => (
     {...props}
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M9.03174 9.97239C13.0208 13.9604 13.9258 9.34672 16.4656 11.8848C18.9143 14.3328 20.3216 14.8232 17.2192 17.9247C16.8306 18.237 14.3616 21.9943 5.6846 13.3197C-2.99348 4.644 0.761585 2.17244 1.07397 1.78395C4.18387 -1.32615 4.66586 0.0893829 7.11449 2.53733C9.65436 5.0765 5.04266 5.98441 9.03174 9.97239Z"
       fill="currentColor"
     />
@@ -139,8 +139,8 @@ export const SvgLocation = (props: any) => (
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M0.5 8.31776C0.5 3.71789 4.34388 0 8.99345 0C13.6561 0 17.5 3.71789 17.5 8.31776C17.5 10.6357 16.657 12.7876 15.2695 14.6116C13.7388 16.6235 11.8522 18.3765 9.72854 19.7524C9.24251 20.0704 8.80387 20.0944 8.27045 19.7524C6.13474 18.3765 4.24809 16.6235 2.7305 14.6116C1.34198 12.7876 0.5 10.6357 0.5 8.31776ZM6.19423 8.57675C6.19423 10.1177 7.45166 11.3297 8.99345 11.3297C10.5362 11.3297 11.8058 10.1177 11.8058 8.57675C11.8058 7.0478 10.5362 5.77683 8.99345 5.77683C7.45166 5.77683 6.19423 7.0478 6.19423 8.57675Z"
       fill="#65A69A"
     />
@@ -159,21 +159,21 @@ export const SvgMenu = (props: any) => (
     <path
       d="M3 7H21"
       stroke="currentColor"
-      stroke-width="1.5"
-      stroke-linecap="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
     />
     <path
       opacity="0.34"
       d="M3 12H21"
       stroke="currentColor"
-      stroke-width="1.5"
-      stroke-linecap="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
     />
     <path
       d="M3 17H21"
       stroke="currentColor"
-      stroke-width="1.5"
-      stroke-linecap="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
     />
   </svg>
 );
