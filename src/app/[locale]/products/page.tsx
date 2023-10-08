@@ -32,9 +32,9 @@ export default function ProductsPage() {
         />
 
         <div className="mt-4 flex flex-col items-center justify-center ">
-          <div className="grid grid-cols-2 xs:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 justify-between gap-7">
-            {data?.length ? (
-              data.map((item: any, index: number) => (
+          {data?.length ? (
+            <div className="grid grid-cols-2 xs:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 justify-between gap-7">
+              {data.map((item: any, index: number) => (
                 <ProductItem
                   key={index}
                   type={item.subTitle}
@@ -43,11 +43,11 @@ export default function ProductsPage() {
                   link={item.link}
                   summary={item.summary}
                 />
-              ))
-            ) : (
-              <Loading />
-            )}
-          </div>
+              ))}
+            </div>
+          ) : (
+            <Loading />
+          )}
         </div>
       </div>
     </PageLayout>
