@@ -1,4 +1,4 @@
-const SERVER_ENDPOINT = process.env.SERVER_ENDPOINT || "http://localhost:3002";
+import { useRouter } from "next/router";
 
 export type ResponseData = {
   status: string;
@@ -20,20 +20,21 @@ async function handleResponse<T>(response: Response): Promise<T> {
   return data as T;
 }
 
-export async function apiFetchProducts(): Promise<any[]> {
-  const response = await fetch(`${SERVER_ENDPOINT}/api/products`);
+export async function apiFetchProducts(url: string): Promise<any[]> {
+  const { asPath } = useRouter();
+  const response = await fetch(`${asPath}/api/products`);
 
   return handleResponse<ResponseData>(response).then((data) => data.data);
 }
 
-export async function apiFetchProjects(): Promise<any[]> {
-  const response = await fetch(`${SERVER_ENDPOINT}/api/projects`);
+export async function apiFetchProjects(url: string): Promise<any[]> {
+  const response = await fetch(`${url}/api/projects`);
 
   return handleResponse<ResponseData>(response).then((data) => data.data);
 }
 
-export async function apiFetchNews(): Promise<any[]> {
-  const response = await fetch(`${SERVER_ENDPOINT}/api/news`);
+export async function apiFetchNews(url: string): Promise<any[]> {
+  const response = await fetch(`${url}/api/news`);
 
   return handleResponse<ResponseData>(response).then((data) => data.data);
 }
