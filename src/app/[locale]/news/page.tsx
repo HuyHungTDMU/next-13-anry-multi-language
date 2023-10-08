@@ -41,7 +41,7 @@ export default function NewsPage() {
           className="!-mt-12 !font-bold !text-[#2c7873]"
         />
 
-        {!data ? (
+        {data?.length ? (
           <div dangerouslySetInnerHTML={{ __html: data }} />
         ) : (
           <Loading />
