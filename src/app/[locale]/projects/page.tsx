@@ -12,7 +12,7 @@ export default function ProjectsPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await apiFetchProjects(window.location.hostname);
+        const response = await apiFetchProjects();
         setData(response);
       } catch (error) {
         console.error("Error reading data:", error);

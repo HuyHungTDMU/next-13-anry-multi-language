@@ -13,7 +13,7 @@ export default function NewsPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await apiFetchNews(window.location.hostname);
+        const response = await apiFetchNews();
         setData(response);
       } catch (error) {
         console.error("Error reading data:", error);

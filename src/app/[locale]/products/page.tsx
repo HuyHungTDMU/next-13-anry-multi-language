@@ -12,7 +12,7 @@ export default function ProductsPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await apiFetchProducts(window.location.hostname);
+        const response = await apiFetchProducts();
         setData(response);
       } catch (error) {
         console.error("Error reading data:", error);

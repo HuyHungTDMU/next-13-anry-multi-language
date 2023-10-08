@@ -1,4 +1,6 @@
-import { useRouter } from "next/router";
+import * as process from "process";
+
+const url = process.env.NEXT_PUBLIC_NOT_SECRET_URL;
 
 export type ResponseData = {
   status: string;
@@ -20,20 +22,19 @@ async function handleResponse<T>(response: Response): Promise<T> {
   return data as T;
 }
 
-export async function apiFetchProducts(url: string): Promise<any[]> {
-  const { asPath } = useRouter();
-  const response = await fetch(`${asPath}/api/products`);
+export async function apiFetchProducts(): Promise<any[]> {
+  const response = await fetch(`${url}/api/products`);
 
   return handleResponse<ResponseData>(response).then((data) => data.data);
 }
 
-export async function apiFetchProjects(url: string): Promise<any[]> {
+export async function apiFetchProjects(): Promise<any[]> {
   const response = await fetch(`${url}/api/projects`);
 
   return handleResponse<ResponseData>(response).then((data) => data.data);
 }
 
-export async function apiFetchNews(url: string): Promise<any[]> {
+export async function apiFetchNews(): Promise<any[]> {
   const response = await fetch(`${url}/api/news`);
 
   return handleResponse<ResponseData>(response).then((data) => data.data);
