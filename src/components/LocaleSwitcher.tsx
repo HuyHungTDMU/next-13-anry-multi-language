@@ -3,7 +3,7 @@
 import clsx from "clsx";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next-intl/client";
-import { ChangeEvent, useTransition } from "react";
+import React, { ChangeEvent, useTransition } from "react";
 
 export default function LocaleSwitcher() {
   const t = useTranslations("LocaleSwitcher");
@@ -22,24 +22,29 @@ export default function LocaleSwitcher() {
   return (
     <label
       className={clsx(
-        "relative text-white w-24",
+        "relative text-white w-20",
         isPending && "transition-opacity [&:disabled]:opacity-30",
       )}
     >
       <p className="sr-only">{t("label")}</p>
+
       <select
-        className="inline-flex appearance-none bg-transparent py-3 pl-2 pr-6"
+        className="inline-flex appearance-none bg-transparent py-3 pl-3 pr-5"
         defaultValue={locale}
         disabled={isPending}
         onChange={onSelectChange}
       >
-        {["vn", "en", "jp"].map((cur) => (
-          <option key={cur} value={cur}>
-            {t("locale", { locale: cur })}
+        {[
+          { text: " 🇻🇳  VN", id: "vn" },
+          { text: " 🇬🇧  EN", id: "en" },
+          { text: " 🇯🇵  JP", id: "jp" },
+        ].map((cur) => (
+          <option className="text-base" key={cur.id} value={cur.id}>
+            {cur.text}
           </option>
         ))}
       </select>
-      <span className="pointer-events-none absolute right-0 top-[8px]">⌄</span>
+      <span className="pointer-events-none absolute right-2 top-[8px]">⌄</span>
     </label>
   );
 }

@@ -2,10 +2,13 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { SvgInstagram, SvgMenu, SvgPinterest, SvgTwitter } from "./Icons";
+import { SvgInstagram, SvgPinterest, SvgTwitter } from "./Icons";
 import { motion } from "framer-motion";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import logo from "../../public/images/logoVN.png";
+import DropdownMenu from "./DropdownMenu";
 
 const CustomLink = ({
   href,
@@ -38,6 +41,7 @@ const CustomLink = ({
 
 const NavBar = () => {
   const t = useTranslations("Index");
+
   const [scrollActive, setScrollActive] = useState(false);
 
   useEffect(() => {
@@ -48,10 +52,18 @@ const NavBar = () => {
 
   return (
     <header
-      className={`fixed top-0 z-30 transition-all w-full px-7 sm:px-16 lg:px-32 py-5 font-medium flex items-center bg-[#65A69A] justify-between ${
+      className={`relative fixed top-0 z-30 transition-all w-full px-7 sm:px-16 lg:px-32 py-5 font-medium flex items-center bg-[#65A69A] justify-between ${
         scrollActive && "bg-light shadow-2xl"
       }`}
     >
+      <Image
+        src={logo}
+        alt="logo"
+        width={40}
+        height={40}
+        className="rounded absolute left-16 lg:block hidden"
+      />
+
       <nav className={`space-x-7 text-ellipsis lg:block hidden text-white`}>
         <CustomLink
           href="/"
@@ -96,13 +108,7 @@ const NavBar = () => {
           scrollActive ? "text-[#2c7873]" : "text-white"
         }`}
       >
-        <Link
-          href="/"
-          title="Home"
-          className={`${scrollActive && "bg-purple-950"}`}
-        >
-          <SvgMenu />
-        </Link>
+        <DropdownMenu />
       </nav>
 
       <nav className="gap-5 flex items-center">

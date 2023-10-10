@@ -6,9 +6,24 @@ import { useEffect, useState } from "react";
 import { apiFetchProducts } from "../../../lib/api-request";
 import { ProductItem } from "../../../components/ProductItem";
 import Loading from "../../../components/Loading";
+import Tabs, { ITab } from "../../../components/Tabs";
+
+const tabs = [
+  { id: "1", name: "Gym Towel" },
+  { id: "2", name: "Gym Towel" },
+  { id: "3", name: "Hotel Towel" },
+  {
+    id: "4",
+    name: "Swimming Towel",
+  },
+  { id: "5", name: "Towel" },
+];
 
 export default function ProductsPage() {
   const [data, setData] = useState<any>([]);
+  const [currentTab, setCurrentTab] = useState<ITab>();
+
+  console.log(currentTab);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -30,6 +45,8 @@ export default function ProductsPage() {
           text="Sản phẩm nổi bật"
           className="!font-bold !text-[#2c7873]"
         />
+
+        <Tabs tabs={tabs} onChanged={(tab) => setCurrentTab(tab)} />
 
         <div className="mt-4 flex flex-col items-center justify-center ">
           {data?.length ? (

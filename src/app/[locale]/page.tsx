@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import PageLayout from "components/PageLayout";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Fade } from "react-slideshow-image";
 import {
   motion,
@@ -24,18 +24,17 @@ import imgResort from "../../../public/images/parners/resort.png";
 import imgMat_tien from "../../../public/images/parners/parner-1.png";
 import imgPhongNgu from "../../../public/images/logoJP.jpg";
 import imgPttxvn_ksmuongthanh from "../../../public/images/parners/ttxvn_ksmuongthanh.jpg";
-import imgPhong1 from "../../../public/images/home/phong1.jpeg";
-import imgPhong2 from "../../../public/images/home/phong2.jpeg";
-import imgPhong3 from "../../../public/images/home/phong3.jpeg";
-import imgPhong4 from "../../../public/images/home/phong4.jpeg";
-import imgPhong5 from "../../../public/images/home/phong5.jpeg";
-import imgPhong6 from "../../../public/images/home/phong6.jpeg";
-import imgPhong7 from "../../../public/images/home/phong7.jpeg";
-import imgPhong8 from "../../../public/images/home/phong8.jpeg";
-import imgPhong9 from "../../../public/images/home/phong9.jpg";
+
+import factory_1 from "../../../public/images/factory/factory_1.jpg";
+import factory_2 from "../../../public/images/factory/factory_2.jpg";
+import factory_3 from "../../../public/images/factory/factory_3.jpg";
+import factory_4 from "../../../public/images/factory/factory_4.jpg";
+import factory_5 from "../../../public/images/factory/factory_5.jpg";
+import factory_6 from "../../../public/images/factory/factory_6.jpg";
 import imgVision from "../../../public/images/home/vision.jpeg";
 import AnimatedText from "../../components/AnimatedText";
 import HireMe from "../../components/HireMe";
+import DialogPreViewImage from "../../components/DialogPreviewImage";
 
 const MotionImage = motion(Image);
 
@@ -139,6 +138,18 @@ function ParallaxText({
 export default function IndexPage() {
   const t = useTranslations("Index");
 
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState<any>();
+
+  const closeDialog = () => {
+    setIsDialogOpen(false);
+  };
+
+  const onPreviewImage = (image: any) => {
+    setCurrentImage(image);
+    setIsDialogOpen(true);
+  };
+
   return (
     <PageLayout>
       <div className="flex items-center text-dark w-full">
@@ -185,73 +196,80 @@ export default function IndexPage() {
           <div className="space-y-7 text-dark text-base mt-7 flex flex-col items-center justify-center">
             <div className="w-full mt-5 flex items-center">
               <p className="text-xl text-left rounded-r-2xl px-4 py-1 font-normal bg-[#2c7873] text-white !font-serif !italic">
-                Đa dạng phong cách:
+                Nhà Máy - Cơ Sở Vật Chất:
               </p>
             </div>
 
             <div className="w-full flex flex-col items-center justify-center space-y-4">
               <p className="w-full">
-                Không giống như bất kỳ công ty nào khác, chúng tôi không chỉ
-                cung cấp các sản phẩm có chất lượng tốt mà còn đa dạng về phong
-                cách. <br />
-                Từ cổ điển đến hiện đại, từ màu sắc tinh tế đến họa tiết trang
-                nhã, chúng tôi có mọi thứ để đáp ứng tất cả các yêu cầu của
-                khách hàng.
+                Khu vực sản xuất: Công ty có một khu vực sản xuất rộng lớn, được
+                thiết kế và xây dựng theo tiêu chuẩn công nghiệp. Khu vực này
+                được chia thành các phân xưởng khác nhau để tối ưu hóa quy trình
+                sản xuất. Các phân xưởng này bao gồm khu vực cắt may, khu vực in
+                ấn, khu vực thêu, và khu vực đóng gói.
+                <br />
+                <br />
+                Máy móc và thiết bị: Công ty sở hữu một bộ máy móc hiện đại và
+                công nghệ tiên tiến để hỗ trợ quy trình sản xuất. Bao gồm các
+                thiết bị như máy cắt tự động, máy in ấn số, máy thêu tự động,
+                máy đóng gói và các thiết bị hỗ trợ khác. Điều này giúp tối ưu
+                hóa năng suất và đảm bảo chất lượng sản phẩm.
+                <br />
+                <br />
+                Phòng nghiên cứu và phát triển (R&D): Công ty cũng đầu tư vào
+                một phòng R&D để nghiên cứu và phát triển các mẫu chăn ga mới,
+                cũng như cập nhật công nghệ sản xuất. Phòng R&D cũng đóng vai
+                trò quan trọng trong việc cải thiện chất lượng và tính đa dạng
+                của sản phẩm.
+                <br />
+                <br />
+                Hệ thống kiểm soát chất lượng: Công ty áp dụng các tiêu chuẩn
+                kiểm soát chất lượng nghiêm ngặt từ quy trình sản xuất cho đến
+                sản phẩm cuối cùng. Điều này đảm bảo rằng chăn ga được sản xuất
+                và cung cấp đáng tin cậy, tuân thủ các yêu cầu chất lượng cao.
               </p>
 
               <div className="gap-9 flex flex-wrap items-center justify-center">
                 <MotionImage
-                  src={imgPhong1}
+                  src={factory_1}
                   alt="imgMuongThanh"
                   whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(factory_1)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
-                  src={imgPhong2}
+                  src={factory_2}
                   alt="imgMuongThanh"
                   whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(factory_2)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
-                  src={imgPhong3}
+                  src={factory_3}
                   alt="imgMuongThanh"
                   whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(factory_3)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
-                  src={imgPhong9}
+                  src={factory_4}
                   alt="imgMuongThanh"
                   whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(factory_4)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
-                  src={imgPhong5}
+                  src={factory_5}
                   alt="imgMuongThanh"
                   whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(factory_5)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
-                  src={imgPhong6}
+                  src={factory_6}
                   alt="imgMuongThanh"
                   whileHover={{ scale: 1.05 }}
-                  className="h-44 rounded-2xl w-auto"
-                />
-                <MotionImage
-                  src={imgPhong7}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
-                  className="h-44 rounded-2xl w-auto"
-                />
-                <MotionImage
-                  src={imgPhong8}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
-                  className="h-44 rounded-2xl w-auto"
-                />
-                <MotionImage
-                  src={imgPhong4}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(factory_6)}
                   className="h-44 rounded-2xl w-auto"
                 />
               </div>
@@ -351,6 +369,12 @@ export default function IndexPage() {
           <HireMe />
         </div>
       </div>
+
+      <DialogPreViewImage
+        isOpen={isDialogOpen}
+        onClose={closeDialog}
+        image={currentImage}
+      />
     </PageLayout>
   );
 }
