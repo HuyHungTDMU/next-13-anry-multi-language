@@ -22,22 +22,22 @@ export default function LocaleSwitcher() {
   return (
     <label
       className={clsx(
-        "relative text-white w-20",
+        "relative text-white w-[55px]",
         isPending && "transition-opacity [&:disabled]:opacity-30",
       )}
     >
       <p className="sr-only">{t("label")}</p>
 
       <select
-        className="inline-flex appearance-none bg-transparent py-3 pl-3 pr-5"
+        className="inline-flex appearance-none bg-transparent py-3 pl-3 pr-6"
         defaultValue={locale}
         disabled={isPending}
         onChange={onSelectChange}
       >
         {[
-          { text: " 🇻🇳  VN", id: "vn" },
-          { text: " 🇬🇧  EN", id: "en" },
-          { text: " 🇯🇵  JP", id: "jp" },
+          { text: " 🇻🇳", id: "vn" },
+          { text: " 🇬🇧", id: "en" },
+          { text: " 🇯🇵", id: "jp" },
         ].map((cur) => (
           <option className="text-base" key={cur.id} value={cur.id}>
             {cur.text}
