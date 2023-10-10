@@ -7,7 +7,7 @@ type Props = {
 
 export default function PageLayout({ children }: Props) {
   return (
-    <div className="mt-20">
+    <div>
       <TransitionEffectScreen />
       <div>{children}</div>
     </div>

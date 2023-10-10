@@ -34,7 +34,7 @@ import factory_6 from "../../../public/images/factory/factory_6.jpg";
 import imgVision from "../../../public/images/home/vision.jpeg";
 import AnimatedText from "../../components/AnimatedText";
 import HireMe from "../../components/HireMe";
-import DialogPreViewImage from "../../components/DialogPreviewImage";
+import DialogPreViewFactory from "../../components/DialogPreviewFactory";
 
 const MotionImage = motion(Image);
 
@@ -370,7 +370,7 @@ export default function IndexPage() {
         </div>
       </div>
 
-      <DialogPreViewImage
+      <DialogPreViewFactory
         isOpen={isDialogOpen}
         onClose={closeDialog}
         image={currentImage}

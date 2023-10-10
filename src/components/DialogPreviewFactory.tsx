@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface DialogProps {
   isOpen: boolean;
@@ -6,7 +7,7 @@ interface DialogProps {
   image?: any;
 }
 
-const DialogPreViewImage: React.FC<DialogProps> = ({
+const DialogPreViewFactory: React.FC<DialogProps> = ({
   isOpen,
   onClose,
   image,
@@ -36,15 +37,17 @@ const DialogPreViewImage: React.FC<DialogProps> = ({
               </button>
             </div>
 
-            <img
-              alt={"Feature Project"}
-              width={350}
-              height={350}
-              src={image}
-              className={
-                "border-neutral-10/50 bg-neutral-10 aspect-square w-20 rounded border object-cover object-center sm:aspect-[242/205] sm:w-full"
-              }
-            />
+            <div className="ease-in duration-300 relative flex">
+              <Image
+                alt={"Feature Project"}
+                width={350}
+                height={350}
+                src={image}
+                className={
+                  "border-neutral-10/50 bg-neutral-10 aspect-square w-20 rounded border object-cover object-center sm:aspect-[242/205] sm:w-full"
+                }
+              />
+            </div>
           </div>
         </div>
       )}
@@ -52,4 +55,4 @@ const DialogPreViewImage: React.FC<DialogProps> = ({
   );
 };
 
-export default DialogPreViewImage;
+export default DialogPreViewFactory;

@@ -22,7 +22,7 @@ async function handleResponse<T>(response: Response): Promise<T> {
   return data as T;
 }
 
-export async function apiFetchProducts(): Promise<any[]> {
+export async function apiFetchProducts(): Promise<any> {
   const response = await fetch(`${url}/api/products`);
 
   return handleResponse<ResponseData>(response).then((data) => data.data);
