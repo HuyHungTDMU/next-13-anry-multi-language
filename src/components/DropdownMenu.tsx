@@ -47,7 +47,7 @@ const DropdownMenu: React.FC = () => {
 
       {isOpen && (
         <div
-          className="origin-top-right absolute left-0 mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+          className="origin-top-right min-w-[100px] absolute left-0 mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="options-menu"

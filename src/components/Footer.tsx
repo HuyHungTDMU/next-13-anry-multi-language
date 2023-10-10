@@ -7,7 +7,7 @@ import { SvgFacebook, SvgInstagram, SvgTwitter } from "./Icons";
 const Footer = () => {
   return (
     <div className="bg-gradient-to-t to-[#2c7873] from-[#466E73] p-7 sm:px-16 lg:px-32">
-      <div className="w-full mx-auto px-6 grid grid-cols-3 gap-7">
+      <div className="w-full mx-auto px-6 grid sm:grid-cols-2 grid-cols-1 xl:grid-cols-3 gap-7">
         <div className="flex flex-col">
           <Image
             width={50}
