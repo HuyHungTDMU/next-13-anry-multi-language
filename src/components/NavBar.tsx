@@ -52,15 +52,15 @@ const NavBar = () => {
 
   return (
     <header
-      className={`relative fixed top-0 z-30 transition-all w-full px-7 sm:px-16 lg:px-32 py-5 font-medium flex items-center bg-[#65A69A] justify-between ${
+      className={`relative fixed top-0 z-30 transition-all w-full px-7 sm:px-16 lg:px-32 py-5 font-medium flex items-center bg-[#40605be6] justify-between ${
         scrollActive && "bg-light shadow-2xl"
       }`}
     >
       <Image
         src={logo}
         alt="logo"
-        width={40}
-        height={40}
+        width={50}
+        height={50}
         className="rounded absolute left-16 lg:block hidden"
       />
 

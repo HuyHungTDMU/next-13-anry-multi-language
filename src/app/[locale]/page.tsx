@@ -161,7 +161,7 @@ export default function IndexPage() {
 
             <div className="xl:w-1/2 w-full flex flex-col items-center self-center">
               <AnimatedText
-                text="Nhà Sản Xuất Chuyên Nghiệp"
+                text="Nhà Sản Xuất Chuyên Nghiệp Đến Từ Nhật Bản"
                 className="!text-6xl !text-left !font-serif !italic !text-[#2c7873]"
               />
 

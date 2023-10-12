@@ -39,8 +39,8 @@ const DropdownMenu: React.FC = () => {
           onClick={toggleMenu}
           src={logo}
           alt="logo"
-          width={40}
-          height={40}
+          width={50}
+          height={50}
           className="rounded cursor-pointer"
         />
       </div>
