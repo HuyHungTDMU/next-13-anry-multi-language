@@ -167,8 +167,8 @@ export default function IndexPage() {
 
               <p className="my-4 text-base font-medium">
                 Được trang bị dây chuyền máy móc công nghệ hiện đại và đội ngũ
-                kỹ thuật viên lành nghề, Việt Thái cam kết sản xuất các sản phẩm
-                chất lượng cao, đáp ứng mọi nhu cầu của khách hàng. <br />
+                kỹ thuật viên lành nghề, Anri cam kết sản xuất các sản phẩm chất
+                lượng cao, đáp ứng mọi nhu cầu của khách hàng. <br />
                 Công ty chú trọng vào việc nghiên cứu và phát triển các sản phẩm
                 mới, đồng thời tạo ra sự khác biệt về kiểu dáng và chất lượng,
                 đáp ứng mọi yêu cầu của khách hàng.
