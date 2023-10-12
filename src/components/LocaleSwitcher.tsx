@@ -22,14 +22,14 @@ export default function LocaleSwitcher() {
   return (
     <label
       className={clsx(
-        "relative text-white w-[55px]",
+        "relative text-white w-[55px] border border-neutral-50 rounded",
         isPending && "transition-opacity [&:disabled]:opacity-30",
       )}
     >
       <p className="sr-only">{t("label")}</p>
 
       <select
-        className="inline-flex appearance-none bg-transparent py-3 pl-3 pr-6"
+        className="inline-flex appearance-none bg-transparent py-1 pl-3 pr-6"
         defaultValue={locale}
         disabled={isPending}
         onChange={onSelectChange}
@@ -44,7 +44,7 @@ export default function LocaleSwitcher() {
           </option>
         ))}
       </select>
-      <span className="pointer-events-none absolute right-2 top-[8px]">⌄</span>
+      <span className="pointer-events-none absolute right-2 top-[-1px]">⌄</span>
     </label>
   );
 }
