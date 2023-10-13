@@ -18,22 +18,23 @@ import imgPhong9 from "../../../../public/images/home/phong9.jpg";
 import certificate1 from "../../../../public/images/certificate1.png";
 import product from "../../../../public/images/product.png";
 import AnimatedText from "../../../components/AnimatedText";
+import { useTranslations } from "next-intl";
 
 const MotionImage = motion(Image);
 
 export default function AboutPage() {
+  const t = useTranslations("Index");
+
   return (
     <PageLayout>
       <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0 pb-7 px-7 sm:px-16 lg:px-32">
         <div className="flex flex-col items-center gap-7 pt-8">
           <div className="flex flex-col gap-1 items-center justify-center">
-            <h3 className="pt-4 text-2xl font-bold leading-8 !text-[#2c7873] tracking-tight">
-              ANRY
+            <h3 className="pt-4 text-2xl font-bold leading-8 !text-[#40605be6] tracking-tight">
+              {t("t27")}
             </h3>
 
-            <p className="!text-gray-800 !font-serif !italic">
-              Chăn ga gối nệm
-            </p>
+            <p className="!text-gray-800 !font-serif !italic">{t("t26")}</p>
           </div>
 
           <Image
@@ -102,8 +103,8 @@ export default function AboutPage() {
 
         <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2 flex flex-col">
           <AnimatedText
-            text="Certificate"
-            className="mb-5 !font-serif !italic !text-[#2c7873]"
+            text={t("t32")}
+            className="mb-5 !font-serif !italic !text-[#40605be6]"
           />
 
           <Image
@@ -113,24 +114,17 @@ export default function AboutPage() {
           />
 
           <AnimatedText
-            text="Nơi truyền thống được truyền cảm hứng."
-            className="mb-5 !font-serif !italic !text-[#2c7873]"
+            text={t("t33")}
+            className="mb-5 !font-serif !italic !text-[#40605be6]"
           />
 
-          <h2 className="mb-7 text-xl !font-serif !italic !text-[#2c7873]">
-            Nơi tâm huyết được đặt trọn vào từng sản phẩm.
+          <h2 className="mb-7 text-xl !font-serif !italic !text-[#40605be6]">
+            {t("t28")}
           </h2>
 
           <div className="space-y-7">
             <div className="flex flex-col-reverse lg:flex-row gap-4">
-              <p>
-                ANRY đã không ngừng cải tiến thiết bị và quy trình để tạo ra các
-                sản phẩm tinh xảo. Phân phối rộng hơn nữa các sản phẩm có lợi
-                cho người tiêu dùng và mong muốn mang đến cho quý khách hàng một
-                giấc ngủ thật ngon và thức dậy trong sự êm ái đầy hứng khởi của
-                sự êm ái với chất lượng tuyệt đỉnh từ những chiếc gối, màu sắc
-                hợp thời, đường nét tỉ mỉ của những bộ ga giường
-              </p>
+              <p>{t("t29")}</p>
               <Image
                 src={imgAbout1}
                 alt="about"
@@ -144,21 +138,9 @@ export default function AboutPage() {
                 alt="about"
                 className="w-full h-auto rounded-xl"
               />
-              <p className="w-full">
-                ANRY còn cung cấp giải pháp cho các doanh nghiệp trong lĩnh vực
-                khách sạn, nhà hàng, spa, trường học, bệnh viện để cùng quý
-                khách hàng tô điểm cho mọi căn phòng với sự sang trọng, tinh tế
-                và tiện nghi nhất. Sản phẩm chính: Chăn ga gối nệm, khăn bông,
-                khăn thêu / dệt logo, các vật dụng phòng khách sạn, resort, các
-                sản phẩm vải dành cho nhà hàng, màn rèm cửa,.. với nhiều kích
-                thước, chất liệu đa dạng để quý khách hàng dễ dàng lựa chọn.
-              </p>
+              <p className="w-full">{t("t30")}</p>
             </div>
-            <p>
-              Đến với ANRY, sản phẩm sẽ đến trực tiếp tay khách hàng, nên có thể
-              hoàn toàn an tâm về chất lượng và giá cả vì tiêu chí duy nhất được
-              định giá là sự sang trọng và hài lòng của quý khách hàng.
-            </p>
+            <p>{t("t31")}</p>
 
             <Image
               src={imgAbout3}

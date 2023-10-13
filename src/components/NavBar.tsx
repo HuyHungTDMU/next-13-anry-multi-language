@@ -31,7 +31,7 @@ const CustomLink = ({
       <span
         className={`inline-block h-[1px] left-0 absolute -bottom-0.5 ease duration-300 group-hover:w-full w-0 ${classHover} 
         //{router. === href && "w-full"} 
-        ${scrollActive ? "bg-[#2c7873]" : "bg-white"}`}
+        ${scrollActive ? "bg-[#40605be6]" : "bg-white"}`}
       >
         &nbsp;
       </span>
@@ -105,7 +105,7 @@ const NavBar = () => {
 
       <nav
         className={`space-x-7 text-ellipsis lg:hidden ${
-          scrollActive ? "text-[#2c7873]" : "text-white"
+          scrollActive ? "text-[#40605be6]" : "text-white"
         }`}
       >
         <DropdownMenu />

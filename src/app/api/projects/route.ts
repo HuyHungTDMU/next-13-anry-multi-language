@@ -11,7 +11,7 @@ export async function GET() {
         subTitle: "Khách Sạn",
         title: "Dự án khách sạn Mường Thanh",
         summary:
-          "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.",
+          "🏨 Chào mừng đến với dự án chăn ga gối nệm dành riêng cho khách sạn của chúng tôi - nơi mang đến sự hoàn hảo cho mỗi không gian nghỉ ngơi của quý vị!",
         link: "/",
         image: imgPhong1,
       },
@@ -20,7 +20,7 @@ export async function GET() {
         subTitle: "Homestay",
         title: "Dự án homestay Đà Lạt",
         summary:
-          "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.",
+          "🌟 Tạo điểm nhấn độc đáo: Với các bộ chăn ga gối nệm phong cách và đa dạng, chúng tôi sẽ giúp không gian homestay của bạn trở thành một nơi đặc biệt, tạo ấn tượng mạnh mẽ với mỗi khách hàng.",
         link: "/",
         image: imgPhong2,
       },
@@ -29,7 +29,7 @@ export async function GET() {
         subTitle: "Chung cư",
         title: "Dự án Căn hộ cao cấp",
         summary:
-          "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.",
+          "🏢 Tiết kiệm không gian: Với thiết kế thông minh và tối ưu hóa không gian, chúng tôi sẽ giúp căn hộ của bạn trở nên thoáng đãng hơn, tận dụng tối đa diện tích sử dụng.",
         link: "/",
         image: imgPhong3,
       },

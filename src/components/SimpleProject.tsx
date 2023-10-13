@@ -16,7 +16,7 @@ export const SimpleProject = ({
   type: string;
 }) => {
   return (
-    <article className="border bg-[#2c7873] z-0 border-[#2c7873] pt-4 pb-6 pl-2 pr-6 flex-col rounded-3xl relative flex gap-4">
+    <article className="border bg-[#40605be6] z-0 border-[#40605be6] pt-4 pb-6 pl-2 pr-6 flex-col rounded-3xl relative flex gap-4">
       <div className="flex flex-col gap-3">
         <MotionImage
           src={img}
@@ -26,7 +26,7 @@ export const SimpleProject = ({
         />
         <Link
           href={link}
-          className="text-gray-50 hover:text-[#2c7873] border-transparent border-b hover:border-dark w-28 text-lg font-semibold"
+          className="text-gray-50 hover:text-[#40605be6] border-transparent border-b hover:border-dark w-28 text-lg font-semibold"
         >
           Visit Project
         </Link>
@@ -40,7 +40,7 @@ export const SimpleProject = ({
         </Link>
       </div>
 
-      <div className="w-[100%] h-[100%] bg-white -z-10 -top-3 -left-3 absolute border rounded-3xl border-[#2c7873]" />
+      <div className="w-[100%] h-[100%] bg-white -z-10 -top-3 -left-3 absolute border rounded-3xl border-[#40605be6]" />
     </article>
   );
 };

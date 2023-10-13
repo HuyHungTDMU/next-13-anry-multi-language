@@ -30,7 +30,7 @@ export default function ContactPage() {
               <p className="text-zinc-900">SDT: 0987654321</p>
               <Link
                 href="mailto:huyhung.tdm@gmail.com"
-                className="h-14 w-14 bg-[#65A69A] animate-bounce hover:bg-transparent hover:text-dark hover:border-sky-600 border text-light flex items-center justify-center border-solid text-xs shadow-md rounded-full"
+                className="h-14 w-14 bg-[#40605be6] animate-bounce hover:bg-transparent hover:text-dark hover:border-sky-600 border text-light flex items-center justify-center border-solid text-xs shadow-md rounded-full"
               >
                 <SvgPhone />
               </Link>

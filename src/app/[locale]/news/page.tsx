@@ -7,8 +7,10 @@ import imgBanner from "../../../../public/images/banner.jpg";
 import { useEffect, useState } from "react";
 import { apiFetchNews } from "../../../lib/api-request";
 import Loading from "../../../components/Loading";
+import { useTranslations } from "next-intl";
 
 export default function NewsPage() {
+  const t = useTranslations("Index");
   const [data, setData] = useState<any>([]);
 
   useEffect(() => {
@@ -37,8 +39,8 @@ export default function NewsPage() {
         </div>
 
         <AnimatedText
-          text="TIN TỨC & SỰ KIỆN"
-          className="!-mt-12 !font-bold !text-[#2c7873]"
+          text={t("t41")}
+          className="!-mt-12 !font-bold !text-[#40605be6]"
         />
 
         {data?.length ? (

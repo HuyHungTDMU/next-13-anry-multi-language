@@ -25,7 +25,7 @@ export const ProductItem = ({
   };
 
   return (
-    <article className="border border-[#2c7873] p-3 rounded-xl flex flex-col gap-2">
+    <article className="border border-[#40605be6] p-3 rounded-xl flex flex-col gap-2">
       <img
         alt={"Feature Project"}
         width={150}
@@ -38,7 +38,7 @@ export const ProductItem = ({
       />
 
       <div className="flex flex-col">
-        <span className="text-xl text-[#2c7873] font-semibold">{type}</span>
+        <span className="text-xl text-[#40605be6] font-semibold">{type}</span>
 
         <span className="text-base text-gray-900">{title}</span>
       </div>

@@ -1,13 +1,19 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import logoVN from "../../public/images/logoVN.png";
 import logoJP from "../../public/images/logoJP.jpg";
 import { SvgFacebook, SvgInstagram, SvgTwitter } from "./Icons";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const Footer = () => {
+  const t = useTranslations("Index");
+
   return (
-    <div className="bg-[#40605be6] p-7 sm:px-16 lg:px-32">
-      <div className="w-full mx-auto px-6 grid sm:grid-cols-2 grid-cols-1 xl:grid-cols-3 gap-7">
+    <div className="bg-[#4e2e21] z-0 opacity-100 p-7 sm:px-16 lg:px-32 flex flex-col gap-4">
+      <div className="w-full mx-auto px-6 grid sm:grid-cols-2 grid-cols-1 gap-7">
         <div className="flex flex-col">
           <Image
             width={50}
@@ -43,33 +49,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col items-center">
-          <div className="flex w-full justify-center items-center mt-2 mb-8 -mx-2">
-            <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-md">
-              <SvgFacebook className="h-6 w-6" />
-            </div>
-            <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-md">
-              <SvgTwitter className="h-6 w-6" />
-            </div>
-            <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-md">
-              <SvgInstagram className="h-6 w-6" />
-            </div>
-          </div>
-
-          <p className="text-white mb-4 font-medium text-lg">Product</p>
-          <ul className="text-gray-100 ">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              About Us{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Locations{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Blog{" "}
-            </li>
-          </ul>
-        </div>
-
         <div className="flex flex-col">
           <Image
             width={50}
@@ -95,6 +74,47 @@ const Footer = () => {
               JP:09032595515 VN:+84-909000671 mail: amj-admin@jinno.co.jp
             </li>
           </ul>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center">
+        <div className="flex w-full justify-center items-center mt-2 mb-8 -mx-2">
+          <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-md">
+            <SvgFacebook className="h-6 w-6" />
+          </div>
+          <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-md">
+            <SvgTwitter className="h-6 w-6" />
+          </div>
+          <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-md">
+            <SvgInstagram className="h-6 w-6" />
+          </div>
+        </div>
+
+        <div className="text-gray-100 flex justify-between gap-4">
+          <Link
+            href="/products"
+            className="my-2 hover:text-orange-500 cursor-pointer transition-all"
+          >
+            {t("products")}
+          </Link>
+          <Link
+            href="/about"
+            className="my-2 hover:text-orange-500 cursor-pointer transition-all"
+          >
+            {t("about")}
+          </Link>
+          <Link
+            href="/contact"
+            className="my-2 hover:text-orange-500 cursor-pointer transition-all"
+          >
+            {t("contact")}
+          </Link>
+          <Link
+            href="/news"
+            className="my-2 hover:text-orange-500 cursor-pointer transition-all"
+          >
+            {t("news")}
+          </Link>
         </div>
       </div>
     </div>

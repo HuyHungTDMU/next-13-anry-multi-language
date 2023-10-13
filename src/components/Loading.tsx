@@ -2,7 +2,7 @@ import React from "react";
 
 const Loading = () => {
   return (
-    <div className="border border-[#2c7873] shadow rounded-md p-4 w-full mx-auto">
+    <div className="border border-[#40605be6] shadow rounded-md p-4 w-full mx-auto">
       <div className="animate-pulse flex space-x-4">
         <div className="rounded-full bg-slate-200 h-10 w-10"></div>
         <div className="flex-1 space-y-6 py-1">

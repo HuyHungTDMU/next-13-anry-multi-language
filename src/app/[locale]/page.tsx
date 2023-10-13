@@ -48,6 +48,7 @@ const Slideshow = () => {
       <Fade
         canSwipe
         arrows={false}
+        infinite
         prevArrow={
           <span className="text-dark rounded-full h-7 flex items-center justify-center shadow-2xl w-7 bg-white ml-4">{`<-`}</span>
         }
@@ -152,6 +153,12 @@ export default function IndexPage() {
 
   return (
     <PageLayout>
+      <img
+        src="/images/banner.jpg"
+        alt="banner"
+        className="fixed top-0 -z-10 left-0 w-auto h-screen opacity-20 object-cover object-center"
+      />
+
       <div className="flex items-center text-dark w-full">
         <div className="w-full h-full inline-block z-0 bg-light pb-7 px-7 sm:px-16 lg:px-32">
           <div className="flex flex-col xl:flex-row items-center justify-between w-full gap-7 mt-10">
@@ -159,19 +166,16 @@ export default function IndexPage() {
               <Slideshow />
             </div>
 
-            <div className="xl:w-1/2 w-full flex flex-col items-center self-center">
+            <div className="xl:w-1/2 w-full flex flex-col items-center self-center p-6 bg-neutral-50 border border-[#40605be6] rounded-2xl">
               <AnimatedText
-                text="Nhà Sản Xuất Chuyên Nghiệp Đến Từ Nhật Bản"
-                className="!text-6xl !text-left !font-serif !italic !text-[#2c7873]"
+                text={t("t7")}
+                className="!text-6xl !text-left !font-serif !italic !text-[#40605be6]"
               />
 
               <p className="my-4 text-base font-medium">
-                Được trang bị dây chuyền máy móc công nghệ hiện đại và đội ngũ
-                kỹ thuật viên lành nghề, Anri cam kết sản xuất các sản phẩm chất
-                lượng cao, đáp ứng mọi nhu cầu của khách hàng. <br />
-                Công ty chú trọng vào việc nghiên cứu và phát triển các sản phẩm
-                mới, đồng thời tạo ra sự khác biệt về kiểu dáng và chất lượng,
-                đáp ứng mọi yêu cầu của khách hàng.
+                {t("t8")}
+                <br />
+                {t("t9")}
               </p>
 
               <div className="flex items-center mt-2 self-start gap-4">
@@ -181,52 +185,37 @@ export default function IndexPage() {
                   target="_blank"
                   download={true}
                 >
-                  Resume
+                  {t("t10")}
                 </Link>
                 <Link
                   className="text-lg font-medium capitalize text-dark underline"
                   href="/contact"
                 >
-                  Contact
+                  {t("t11")}
                 </Link>
               </div>
             </div>
           </div>
 
-          <div className="space-y-7 text-dark text-base mt-7 flex flex-col items-center justify-center">
-            <div className="w-full mt-5 flex items-center">
-              <p className="text-xl text-left rounded-r-2xl px-4 py-1 font-normal bg-[#2c7873] text-white !font-serif !italic">
-                Nhà Máy - Cơ Sở Vật Chất:
+          <div className="space-y-7 text-dark text-base mt-7 flex flex-col items-center justify-center rounded bg-neutral-50">
+            <div className="w-full flex items-center">
+              <p className="text-xl text-left rounded-r-2xl px-4 py-1 font-normal bg-[#40605be6] text-white !font-serif !italic">
+                {t("t12")}:
               </p>
             </div>
 
             <div className="w-full flex flex-col items-center justify-center space-y-4">
-              <p className="w-full">
-                Khu vực sản xuất: Công ty có một khu vực sản xuất rộng lớn, được
-                thiết kế và xây dựng theo tiêu chuẩn công nghiệp. Khu vực này
-                được chia thành các phân xưởng khác nhau để tối ưu hóa quy trình
-                sản xuất. Các phân xưởng này bao gồm khu vực cắt may, khu vực in
-                ấn, khu vực thêu, và khu vực đóng gói.
+              <p className="px-4 w-full">
+                {t("t13")}
                 <br />
                 <br />
-                Máy móc và thiết bị: Công ty sở hữu một bộ máy móc hiện đại và
-                công nghệ tiên tiến để hỗ trợ quy trình sản xuất. Bao gồm các
-                thiết bị như máy cắt tự động, máy in ấn số, máy thêu tự động,
-                máy đóng gói và các thiết bị hỗ trợ khác. Điều này giúp tối ưu
-                hóa năng suất và đảm bảo chất lượng sản phẩm.
+                {t("t14")}
                 <br />
                 <br />
-                Phòng nghiên cứu và phát triển (R&D): Công ty cũng đầu tư vào
-                một phòng R&D để nghiên cứu và phát triển các mẫu chăn ga mới,
-                cũng như cập nhật công nghệ sản xuất. Phòng R&D cũng đóng vai
-                trò quan trọng trong việc cải thiện chất lượng và tính đa dạng
-                của sản phẩm.
+                {t("t15")}
                 <br />
                 <br />
-                Hệ thống kiểm soát chất lượng: Công ty áp dụng các tiêu chuẩn
-                kiểm soát chất lượng nghiêm ngặt từ quy trình sản xuất cho đến
-                sản phẩm cuối cùng. Điều này đảm bảo rằng chăn ga được sản xuất
-                và cung cấp đáng tin cậy, tuân thủ các yêu cầu chất lượng cao.
+                {t("t16")}
               </p>
 
               <div className="gap-9 flex flex-wrap items-center justify-center">
@@ -276,8 +265,8 @@ export default function IndexPage() {
             </div>
 
             <div className="w-full flex items-center pt-10">
-              <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#2c7873] text-white !font-serif !italic">
-                Chất lượng hàng đầu:
+              <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#40605be6] text-white !font-serif !italic">
+                {t("t17")}:
               </p>
             </div>
 
@@ -289,21 +278,18 @@ export default function IndexPage() {
               />
 
               <p className="text-left">
-                Chúng tôi hiểu rằng việc lựa chọn chăn gối nệm đúng cho khách
-                sạn của bạn có thể tạo ra sự khác biệt đáng kể trong sự hài lòng
-                của khách hàng. <br />
-                Vì vậy, tất cả các sản phẩm tại Khách Sạn LinenLux đều được sản
-                xuất với tiêu chuẩn chất lượng cao nhất. <br />
-                Chúng tôi luôn chọn lựa các nguyên liệu tốt nhất, kết hợp cùng
-                sự khéo léo trong thiết kế để tạo ra những sản phẩm vượt qua sự
-                mong đợi.
+                {t("t18")}
+                <br />
+                {t("t19")}
+                <br />
+                {t("t20")}
               </p>
             </div>
 
             <div className="text-2xl font-semibold gap-2 flex items-center pt-10 ">
-              Đối tác hàng đầu:
-              <span className="rounded-r-2xl px-4 py-1 font-normal bg-[#2c7873] text-white">
-                Khách Sạn Mường Thanh
+              {t("t21")}:
+              <span className="rounded-r-2xl px-4 py-1 font-normal bg-[#40605be6] text-white">
+                {t("t22")}
               </span>
             </div>
 
@@ -356,13 +342,10 @@ export default function IndexPage() {
               </ParallaxText>
             </section>
 
-            <p className="w-full pb-10">
-              Chúng tôi tự hào là đối tác đáng tin cậy của các khách sạn hàng
-              đầu trong việc cung cấp các sản phẩm chất lượng cao như chăn, gối
-              và nệm. <br />
-              Với hơn một thập kỷ kinh nghiệm trong ngành, chúng tôi cam kết
-              mang đến sự thoải mái và sang trọng cho trải nghiệm nghỉ ngơi của
-              khách hàng.
+            <p className="px-4 w-full pb-4">
+              {t("t23")}
+              <br />
+              {t("t24")}
             </p>
           </div>
 
