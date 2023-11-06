@@ -1,30 +1,12 @@
-"use client";
-
 import Image from "next/image";
 import PageLayout from "components/PageLayout";
 import AnimatedText from "../../../components/AnimatedText";
 import imgBanner from "../../../../public/images/banner.jpg";
-import { useEffect, useState } from "react";
 import { apiFetchNews } from "../../../lib/api-request";
 import Loading from "../../../components/Loading";
-import { useTranslations } from "next-intl";
 
-export default function NewsPage() {
-  const t = useTranslations("Index");
-  const [data, setData] = useState<any>([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await apiFetchNews();
-        setData(response);
-      } catch (error) {
-        console.error("Error reading data:", error);
-      }
-    };
-
-    fetchData().then();
-  }, []);
+export default async function NewsPage() {
+  const data = await apiFetchNews();
 
   return (
     <PageLayout>
@@ -39,12 +21,17 @@ export default function NewsPage() {
         </div>
 
         <AnimatedText
-          text={t("t41")}
+          text={"t41"}
           className="!-mt-12 !font-bold !text-[#40605be6]"
         />
 
         {data?.length ? (
-          <div dangerouslySetInnerHTML={{ __html: data }} />
+          data.map((item: any, index: number) => (
+            <div
+              key={index}
+              dangerouslySetInnerHTML={{ __html: item.content }}
+            />
+          ))
         ) : (
           <Loading />
         )}

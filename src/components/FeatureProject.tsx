@@ -1,9 +1,8 @@
-import Image, { StaticImageData } from "next/image";
+"use client";
+
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-
-const MotionImage = motion(Image);
 
 export const FeatureProject = ({
   link,
@@ -13,7 +12,7 @@ export const FeatureProject = ({
   summary,
 }: {
   link: string;
-  img: StaticImageData;
+  img: string;
   title: string;
   type: string;
   summary: string;
@@ -24,7 +23,7 @@ export const FeatureProject = ({
     <article className="border bg-[#40605be6] z-0 border-[#40605be6] pt-2 pb-6 pl-2 pr-6 rounded-3xl relative flex gap-4">
       <div className="w-56 flex flex-col gap-3 justify-around items-center">
         <Link href={"#"}>
-          <MotionImage
+          <motion.img
             src={img}
             alt={"Feature Project"}
             className="w-52 h-auto rounded-3xl cursor-pointer"

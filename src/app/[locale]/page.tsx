@@ -168,7 +168,7 @@ export default function IndexPage() {
 
             <div className="xl:w-1/2 w-full flex flex-col items-center self-center p-6 bg-neutral-50 border border-[#40605be6] rounded-2xl">
               <AnimatedText
-                text={t("t7")}
+                text={"t7"}
                 className="!text-6xl !text-left !font-serif !italic !text-[#40605be6]"
               />
 

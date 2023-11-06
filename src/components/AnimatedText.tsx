@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const quote = {
   initial: {
@@ -35,6 +38,8 @@ export default function AnimatedText({
   text: string;
   className?: string;
 }) {
+  const t = useTranslations("Index");
+
   return (
     <div className="w-full mx-auto py-2 flex items-center justify-center text-center">
       <motion.h1
@@ -43,15 +48,17 @@ export default function AnimatedText({
         initial="initial"
         animate="animate"
       >
-        {text.split(" ").map((word, index) => (
-          <motion.span
-            variants={singleWord}
-            key={index}
-            className="inline-block"
-          >
-            {word} &nbsp;
-          </motion.span>
-        ))}
+        {t(text as any)
+          .split(" ")
+          .map((word, index) => (
+            <motion.span
+              variants={singleWord}
+              key={index}
+              className="inline-block"
+            >
+              {word} &nbsp;
+            </motion.span>
+          ))}
       </motion.h1>
     </div>
   );

@@ -103,7 +103,7 @@ export default function AboutPage() {
 
         <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2 flex flex-col">
           <AnimatedText
-            text={t("t32")}
+            text={"t32"}
             className="mb-5 !font-serif !italic !text-[#40605be6]"
           />
 
@@ -114,7 +114,7 @@ export default function AboutPage() {
           />
 
           <AnimatedText
-            text={t("t33")}
+            text={"t33"}
             className="mb-5 !font-serif !italic !text-[#40605be6]"
           />
 
