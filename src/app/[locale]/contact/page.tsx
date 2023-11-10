@@ -36,7 +36,9 @@ export default function ContactPage() {
               </Link>
             </div>
             <div className="flex items-center gap-2">
-              <SvgLocation /> Địa chỉ: Tp Hồ Chí Minh
+              <SvgLocation /> Head Office: Charmington La Pointe Bldg.Block B,
+              8-3A 181 Cao Thang Str., 12 Ward, Dist.10, Ho Chi Minh City,
+              72510, Vietnam
             </div>
           </div>
         </div>

@@ -71,7 +71,9 @@ const Footer = () => {
               TEL:052-982-9347 FAX: 052-982-9348
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              JP:09032595515 VN:+84-909000671 mail: amj-admin@jinno.co.jp
+              JP:09032595515 <br />
+              VN:+84-909000671 <br />
+              mail: amj-admin@jinno.co.jp
             </li>
           </ul>
         </div>

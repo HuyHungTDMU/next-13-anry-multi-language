@@ -3,7 +3,6 @@ import PageLayout from "components/PageLayout";
 import AnimatedText from "../../../components/AnimatedText";
 import imgBanner from "../../../../public/images/banner.jpg";
 import { apiFetchNews } from "../../../lib/api-request";
-import Loading from "../../../components/Loading";
 
 export default async function NewsPage() {
   const data = await apiFetchNews();
@@ -24,17 +23,17 @@ export default async function NewsPage() {
           text={"t41"}
           className="!-mt-12 !font-bold !text-[#40605be6]"
         />
-
-        {data?.length ? (
-          data.map((item: any, index: number) => (
-            <div
-              key={index}
-              dangerouslySetInnerHTML={{ __html: item.content }}
-            />
-          ))
-        ) : (
-          <Loading />
-        )}
+        <div dangerouslySetInnerHTML={{ __html: data }} />
+        {/*{data?.length ? (*/}
+        {/*  data.map((item: any, index: number) => (*/}
+        {/*    <div*/}
+        {/*      key={index}*/}
+        {/*      dangerouslySetInnerHTML={{ __html: item.content }}*/}
+        {/*    />*/}
+        {/*  ))*/}
+        {/*) : (*/}
+        {/*  <Loading />*/}
+        {/*)}*/}
       </div>
     </PageLayout>
   );
