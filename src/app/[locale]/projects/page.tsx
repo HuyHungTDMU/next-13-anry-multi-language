@@ -18,11 +18,11 @@ export default async function ProjectsPage() {
               {data.map((item: any, index: number) => (
                 <FeatureProject
                   key={index}
-                  type={item.type}
-                  title={item.name}
+                  type={item.subTitle}
+                  title={item.title}
                   img={item.image}
                   link={item.image}
-                  summary={item.description}
+                  summary={item.summary}
                 />
               ))}
             </div>
