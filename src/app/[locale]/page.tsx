@@ -35,6 +35,7 @@ import imgVision from "../../../public/images/home/vision.jpeg";
 import AnimatedText from "../../components/AnimatedText";
 import HireMe from "../../components/HireMe";
 import DialogPreViewFactory from "../../components/DialogPreviewFactory";
+import ListBanner from "components/ListBanner";
 
 const MotionImage = motion(Image);
 
@@ -163,7 +164,8 @@ export default function IndexPage() {
         <div className="w-full h-full inline-block z-0 bg-light pb-7 px-7 sm:px-16 lg:px-32">
           <div className="flex flex-col xl:flex-row items-center justify-between w-full gap-7 mt-10">
             <div className="xl:w-1/2 w-full">
-              <Slideshow />
+              {/* <Slideshow /> */}
+              <ListBanner/>
             </div>
 
             <div className="xl:w-1/2 w-full flex flex-col items-center self-center p-6 bg-neutral-50 border border-[#40605be6] rounded-2xl">

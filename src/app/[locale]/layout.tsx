@@ -31,8 +31,12 @@ export default async function LocaleLayout({
     <html className="h-full" lang={locale} suppressHydrationWarning={true}>
       <body className={clsx(inter.className)}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="flex h-auto flex-col gap-4">
+          <div className="flex h-auto flex-col">
             <NavBar />
+            <div className="flex flex-col text-[#212529] justify-center items-center">
+              <span className="mt-4 text-2xl font-medium">ANRI</span>
+              <span className="text-xs">2006</span>
+            </div>
             {children}
             <Footer />
           </div>

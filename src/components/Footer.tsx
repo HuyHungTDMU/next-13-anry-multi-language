@@ -3,7 +3,6 @@
 import React from "react";
 import Image from "next/image";
 import logoVN from "../../public/images/logoVN.png";
-import logoJP from "../../public/images/logoJP.jpg";
 import { SvgFacebook, SvgInstagram, SvgTwitter } from "./Icons";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -12,7 +11,7 @@ const Footer = () => {
   const t = useTranslations("Index");
 
   return (
-    <div className="bg-[#4e2e21] z-0 opacity-100 p-7 sm:px-16 lg:px-32 flex flex-col gap-4">
+    <div className="bg-[#40605be6] z-0 opacity-100 p-7 sm:px-16 lg:px-32 flex flex-col gap-4">
       <div className="w-full mx-auto px-6 grid sm:grid-cols-2 grid-cols-1 gap-7">
         <div className="flex flex-col">
           <Image
@@ -36,7 +35,11 @@ const Footer = () => {
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               TEL:84-2838370761 FAX:84-2838372571
             </li>
+          </ul>
+        </div>
 
+        <div className="flex flex-col">
+          <ul className="text-gray-100 ">
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               Ha Noi Rep. Office V-Tower Bldg.302
             </li>
@@ -45,35 +48,6 @@ const Footer = () => {
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               TEL:84-903824785 FAX:84-2437664511
-            </li>
-          </ul>
-        </div>
-
-        <div className="flex flex-col">
-          <Image
-            width={50}
-            height={50}
-            className="rounded"
-            src={logoJP}
-            alt="logoJP"
-          />
-          <ul className="text-gray-100 ">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              MIRAI COMPANY
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              〒451-0062 名古屋市西区花の木2-21-14
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              2-21-14 Hananoki, Nishi-ku,Nagoya-shi,4510062,Japan
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              TEL:052-982-9347 FAX: 052-982-9348
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              JP:09032595515 <br />
-              VN:+84-909000671 <br />
-              mail: amj-admin@jinno.co.jp
             </li>
           </ul>
         </div>

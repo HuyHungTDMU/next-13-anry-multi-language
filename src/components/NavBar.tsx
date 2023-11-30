@@ -2,8 +2,6 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { SvgInstagram, SvgTwitter } from "./Icons";
-import { motion } from "framer-motion";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -112,7 +110,7 @@ const NavBar = () => {
       </nav>
 
       <nav className="gap-5 flex items-center">
-        <motion.a
+        {/* <motion.a
           className={`bg-white rounded-full items-center justify-center flex w-7 h-7 shadow-md ${
             scrollActive && "shadow-2xl"
           }`}
@@ -134,7 +132,7 @@ const NavBar = () => {
           whileHover={{ y: -2 }}
         >
           <SvgInstagram />
-        </motion.a>
+        </motion.a> */}
 
         <LocaleSwitcher />
       </nav>

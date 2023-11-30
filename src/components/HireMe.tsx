@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const HireMe = () => {
     return (
-        <div className="fixed left-4 bottom-4 h-24 flex justify-center items-center overflow-hidden">
+        <div className="z-30 fixed left-4 bottom-4 h-24 flex justify-center items-center overflow-hidden">
             <div className="items-center flex justify-center">
                 <Link
                     href="mailto:huyhung.tdm@gmail.com"
