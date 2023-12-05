@@ -168,10 +168,10 @@ export default function IndexPage() {
               <ListBanner/>
             </div>
 
-            <div className="xl:w-1/2 w-full flex flex-col items-center self-center p-6 bg-neutral-50 border border-[#40605be6] rounded-2xl">
+            <div className="xl:w-1/2 w-full flex flex-col items-center self-center p-6 bg-neutral-50 border border-[#031E2F] rounded-2xl">
               <AnimatedText
                 text={"t7"}
-                className="!text-6xl !text-left !font-serif !italic !text-[#40605be6]"
+                className="!text-6xl !text-left !font-serif !italic !text-[#031E2F]"
               />
 
               <p className="my-4 text-base font-medium">
@@ -201,7 +201,7 @@ export default function IndexPage() {
 
           <div className="space-y-7 text-dark text-base mt-7 flex flex-col items-center justify-center rounded bg-neutral-50">
             <div className="w-full flex items-center">
-              <p className="text-xl text-left rounded-r-2xl px-4 py-1 font-normal bg-[#40605be6] text-white !font-serif !italic">
+              <p className="text-xl text-left rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">
                 {t("t12")}:
               </p>
             </div>
@@ -267,7 +267,7 @@ export default function IndexPage() {
             </div>
 
             <div className="w-full flex items-center pt-10">
-              <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#40605be6] text-white !font-serif !italic">
+              <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">
                 {t("t17")}:
               </p>
             </div>
@@ -290,7 +290,7 @@ export default function IndexPage() {
 
             <div className="text-2xl font-semibold gap-2 flex items-center pt-10 ">
               {t("t21")}:
-              <span className="rounded-r-2xl px-4 py-1 font-normal bg-[#40605be6] text-white">
+              <span className="rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white">
                 {t("t22")}
               </span>
             </div>

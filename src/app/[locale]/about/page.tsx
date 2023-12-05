@@ -30,7 +30,7 @@ export default function AboutPage() {
       <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0 pb-7 px-7 sm:px-16 lg:px-32">
         <div className="flex flex-col items-center gap-7">
           <div className="flex flex-col gap-1 items-center justify-center">
-            <h3 className="pt-4 text-2xl font-bold leading-8 !text-[#40605be6] tracking-tight">
+            <h3 className="pt-4 text-2xl font-bold leading-8 !text-[#031E2F] tracking-tight">
               {t("t27")}
             </h3>
 
@@ -104,7 +104,7 @@ export default function AboutPage() {
         <div className="prose max-w-none pb-8 dark:prose-invert xl:col-span-2 flex flex-col">
           <AnimatedText
             text={"t32"}
-            className="mb-5 !font-serif !italic !text-[#40605be6]"
+            className="mb-5 !font-serif !italic !text-[#031E2F]"
           />
 
           <Image
@@ -115,10 +115,10 @@ export default function AboutPage() {
 
           <AnimatedText
             text={"t33"}
-            className="mb-5 !font-serif !italic !text-[#40605be6]"
+            className="mb-5 !font-serif !italic !text-[#031E2F]"
           />
 
-          <h2 className="mb-7 text-xl !font-serif !italic !text-[#40605be6]">
+          <h2 className="mb-7 text-xl !font-serif !italic !text-[#031E2F]">
             {t("t28")}
           </h2>
 

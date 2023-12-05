@@ -10,7 +10,7 @@ export default async function ProjectsPage() {
   return (
     <PageLayout>
       <div className="flex flex-col gap-4 mt-12 pb-7 px-7 sm:px-16 lg:px-32">
-        <AnimatedText text={"t39"} className="!font-bold !text-[#40605be6]" />
+        <AnimatedText text={"t39"} className="!font-bold !text-[#031E2F]" />
 
         <div className="mt-4 flex flex-col items-center justify-center ">
           {data?.length ? (

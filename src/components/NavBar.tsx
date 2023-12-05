@@ -29,7 +29,7 @@ const CustomLink = ({
       <span
         className={`inline-block h-[1px] left-0 absolute -bottom-0.5 ease duration-300 group-hover:w-full w-0 ${classHover} 
         //{router. === href && "w-full"} 
-        ${scrollActive ? "bg-[#40605be6]" : "bg-white"}`}
+        ${scrollActive ? "bg-[#031E2F]" : "bg-white"}`}
       >
         &nbsp;
       </span>
@@ -50,7 +50,7 @@ const NavBar = () => {
 
   return (
     <header
-      className={`relative fixed top-0 z-30 transition-all w-full px-7 sm:px-16 lg:px-32 py-5 font-medium flex items-center bg-[#40605be6] justify-between ${
+      className={`relative fixed top-0 z-30 transition-all w-full px-7 sm:px-16 lg:px-32 py-5 font-medium flex items-center bg-[#031E2F] justify-between ${
         scrollActive && "bg-light shadow-2xl"
       }`}
     >
@@ -103,7 +103,7 @@ const NavBar = () => {
 
       <nav
         className={`space-x-7 text-ellipsis lg:hidden ${
-          scrollActive ? "text-[#40605be6]" : "text-white"
+          scrollActive ? "text-[#031E2F]" : "text-white"
         }`}
       >
         <DropdownMenu />

@@ -10,7 +10,7 @@ export default async function ProductsPage() {
   return (
     <PageLayout>
       <div className="flex flex-col gap-4 pb-7 px-7 sm:px-16 lg:px-32">
-        <AnimatedText text={"t25"} className="!font-bold !text-[#40605be6]" />
+        <AnimatedText text={"t25"} className="!font-bold !text-[#031E2F]" />
 
         <ListProducts list={data} />
       </div>

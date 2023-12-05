@@ -11,7 +11,7 @@ const Footer = () => {
   const t = useTranslations("Index");
 
   return (
-    <div className="bg-[#40605be6] z-0 opacity-100 p-7 sm:px-16 lg:px-32 flex flex-col gap-4">
+    <div className="bg-[#031E2F] z-0 opacity-100 p-7 sm:px-16 lg:px-32 flex flex-col gap-4">
       <div className="w-full mx-auto px-6 grid sm:grid-cols-2 grid-cols-1 gap-7">
         <div className="flex flex-col">
           <Image

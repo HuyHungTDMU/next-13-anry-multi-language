@@ -21,7 +21,7 @@ export default async function NewsPage() {
 
         <AnimatedText
           text={"t41"}
-          className="!-mt-12 !font-bold !text-[#40605be6]"
+          className="!-mt-12 !font-bold !text-[#031E2F]"
         />
         <div dangerouslySetInnerHTML={{ __html: data }} />
         {/*{data?.length ? (*/}

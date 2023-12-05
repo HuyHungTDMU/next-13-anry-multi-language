@@ -34,8 +34,8 @@ export default async function LocaleLayout({
           <div className="flex h-auto flex-col">
             <NavBar />
             <div className="flex flex-col text-[#212529] justify-center items-center">
-              <span className="mt-4 text-2xl font-medium">ANRI</span>
-              <span className="text-xs">2006</span>
+              <span className="mt-4 text-4xl font-medium">ANRI</span>
+              <span className="text-xl">2006</span>
             </div>
             {children}
             <Footer />
