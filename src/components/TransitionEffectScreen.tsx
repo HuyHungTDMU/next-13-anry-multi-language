@@ -7,7 +7,7 @@ const TransitionEffectScreen = () => {
   return (
     <>
       <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#536f6b]"
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#031E2F]"
         initial={{ x: "100%", width: "100%" }}
         animate={{ x: "0%", width: "100%" }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
