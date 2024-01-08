@@ -15,8 +15,7 @@ import imgPhong6 from "../../../../public/images/home/phong6.jpeg";
 import imgPhong7 from "../../../../public/images/home/phong7.jpeg";
 import imgPhong8 from "../../../../public/images/home/phong8.jpeg";
 import imgPhong9 from "../../../../public/images/home/phong9.jpg";
-import certificate1 from "../../../../public/images/certificate1.png";
-import product from "../../../../public/images/product.png";
+import certificate from "../../../../public/images/certificate.jpg";
 import AnimatedText from "../../../components/AnimatedText";
 import { useTranslations } from "next-intl";
 
@@ -37,11 +36,7 @@ export default function AboutPage() {
             <p className="!text-gray-800 !font-serif !italic">{t("t26")}</p>
           </div>
 
-          <Image
-            src={product}
-            alt="certificate"
-            className="border border-b-sky-600 w-full h-auto rounded-xl"
-          />
+          <iframe className="border border-b-sky-600 w-full h-auto rounded-xl" src="https://www.youtube.com/embed/HYt_KghUyeU?si=nO6H9PDi3JZHIT-i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
           <div className="flex gap-4 flex-wrap items-center justify-center">
             <MotionImage
@@ -108,7 +103,7 @@ export default function AboutPage() {
           />
 
           <Image
-            src={certificate1}
+            src={certificate}
             alt="certificate"
             className="mb-14 border border-b-sky-600 w-full h-auto rounded-xl"
           />
