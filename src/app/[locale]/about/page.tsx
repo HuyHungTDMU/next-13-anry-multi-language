@@ -35,11 +35,11 @@ export default function AboutPage() {
 
             <p className="!text-gray-800 !font-serif !italic">{t("t26")}</p>
           </div>
-
+          
           <iframe
-            width="853"
-            height="480"
-            src={`https://www.youtube.com/embed/${embedId}`}
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/HYt_KghUyeU?si=s3yBSHT2r5F2wJpB"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
