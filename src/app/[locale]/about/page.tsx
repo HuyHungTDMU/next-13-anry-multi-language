@@ -37,8 +37,8 @@ export default function AboutPage() {
           </div>
           
           <iframe
-            width="560"
-            height="315"
+            width="360"
+            height="165"
             src="https://www.youtube.com/embed/HYt_KghUyeU?si=s3yBSHT2r5F2wJpB"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
