@@ -17,13 +17,19 @@ import { wrap } from "@motionone/utils";
 import Link from "next/link";
 import Image from "next/image";
 
-import imgMuongThanh from "../../../public/images/parners/muong-thanh.png";
-import imgHotel from "../../../public/images/parners/parner-2.png";
-import imgPenhau from "../../../public/images/parners/penhau.jpeg";
-import imgResort from "../../../public/images/parners/resort.png";
-import imgMat_tien from "../../../public/images/parners/parner-1.png";
+
+import parner1 from "../../../public/images/parners/1.png";
+import parner2 from "../../../public/images/parners/2.jpg";
+import parner3 from "../../../public/images/parners/3.jpg";
+import parner4 from "../../../public/images/parners/4.png";
+import parner5 from "../../../public/images/parners/5.jpg";
+import parner6 from "../../../public/images/parners/6.jpg";
+import parner7 from "../../../public/images/parners/7.jpg";
+import parner8 from "../../../public/images/parners/8.jpg";
+import parner9 from "../../../public/images/parners/9.jpg";
+import parner10 from "../../../public/images/parners/10.png";
+import parner11 from "../../../public/images/parners/11.png";
 import imgPhongNgu from "../../../public/images/logoJP.jpg";
-import imgPttxvn_ksmuongthanh from "../../../public/images/parners/ttxvn_ksmuongthanh.jpg";
 
 import factory_1 from "../../../public/images/factory/factory_1.jpg";
 import factory_2 from "../../../public/images/factory/factory_2.jpg";
@@ -299,44 +305,68 @@ export default function IndexPage() {
               <ParallaxText baseVelocity={-5}>
                 <div className="flex min-w-0 items-center gap-8 flex-nowrap">
                   <MotionImage
-                    src={imgPenhau}
-                    alt="imgMuongThanh"
+                    src={parner1}
+                    alt="parner1"
                     whileHover={{ scale: 1.02 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
-                    src={imgHotel}
-                    alt="imgMuongThanh"
+                    src={parner2}
+                    alt="imgMuonparner2Thanh"
                     whileHover={{ scale: 1.02 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
-                    src={imgMat_tien}
-                    alt="imgMuongThanh"
+                    src={parner3}
+                    alt="parner3"
                     whileHover={{ scale: 1.02 }}
                     className="h-32 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
-                    src={imgMuongThanh}
-                    alt="imgMuongThanh"
+                    src={parner4}
+                    alt="parner4"
                     whileHover={{ scale: 1.02 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
-                    src={imgResort}
-                    alt="imgMuongThanh"
+                    src={parner5}
+                    alt="parner5"
                     whileHover={{ scale: 1.02 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
-                    src={imgPhongNgu}
-                    alt="imgMuongThanh"
+                    src={parner6}
+                    alt="parner6"
                     whileHover={{ scale: 1.02 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
-                    src={imgPttxvn_ksmuongthanh}
-                    alt="imgMuongThanh"
+                    src={parner7}
+                    alt="parner7"
+                    whileHover={{ scale: 1.02 }}
+                    className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
+                  />
+                  <MotionImage
+                    src={parner8}
+                    alt="parner8"
+                    whileHover={{ scale: 1.02 }}
+                    className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
+                  />
+                  <MotionImage
+                    src={parner9}
+                    alt="parner9"
+                    whileHover={{ scale: 1.02 }}
+                    className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
+                  />
+                  <MotionImage
+                    src={parner10}
+                    alt="parner10"
+                    whileHover={{ scale: 1.02 }}
+                    className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
+                  />
+                  <MotionImage
+                    src={parner11}
+                    alt="parner11"
                     whileHover={{ scale: 1.02 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
