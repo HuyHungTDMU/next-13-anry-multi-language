@@ -21,6 +21,10 @@ const images = [
     },
     {
         original: "/images/banners/5.jpg",
+        thumbnail: "/images/banners/5.jpg",
+    },
+    {
+        original: "/images/banners/6.jpg",
         thumbnail: "/images/banners/6.jpg",
     },
 ];

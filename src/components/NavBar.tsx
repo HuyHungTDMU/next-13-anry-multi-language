@@ -110,30 +110,7 @@ const NavBar = () => {
       </nav>
 
       <nav className="gap-5 flex items-center">
-        {/* <motion.a
-          className={`bg-white rounded-full items-center justify-center flex w-7 h-7 shadow-md ${
-            scrollActive && "shadow-2xl"
-          }`}
-          href="https://twitter.com/"
-          target="_blank"
-          whileTap={{ scale: 0.9 }}
-          whileHover={{ y: -2 }}
-        >
-          <SvgTwitter />
-        </motion.a>
-
-        <motion.a
-          className={`bg-white rounded-full items-center justify-center flex w-7 h-7 shadow-md ${
-            scrollActive && "shadow-2xl"
-          }`}
-          href="https://www.instagram.com/"
-          target="_blank"
-          whileTap={{ scale: 0.9 }}
-          whileHover={{ y: -2 }}
-        >
-          <SvgInstagram />
-        </motion.a> */}
-
+        <img src="/images/logo_hiephoikhan.png" alt="logo-hiephoikhan" className="w-[50px] h-[50px] object-center object-cover rounded"/> 
         <LocaleSwitcher />
       </nav>
     </header>

@@ -49,6 +49,9 @@ const Footer = () => {
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               TEL:84-903824785 FAX:84-2437664511
             </li>
+            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
+              <img src="/images/logo_hiephoikhan.png" alt="logo-hiephoikhan" className="w-[90px] h-[100px] object-center object-cover rounded"/> 
+            </li>
           </ul>
         </div>
       </div>

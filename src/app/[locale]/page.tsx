@@ -29,7 +29,6 @@ import parner8 from "../../../public/images/parners/8.jpg";
 import parner9 from "../../../public/images/parners/9.jpg";
 import parner10 from "../../../public/images/parners/10.png";
 import parner11 from "../../../public/images/parners/11.png";
-import imgPhongNgu from "../../../public/images/logoJP.jpg";
 
 import factory_1 from "../../../public/images/factory/factory_1.jpg";
 import factory_2 from "../../../public/images/factory/factory_2.jpg";
