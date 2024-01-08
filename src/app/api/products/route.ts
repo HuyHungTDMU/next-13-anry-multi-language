@@ -324,7 +324,7 @@ const products = [
     type: "swimming_towel",
     subTitle: "Swimming",
     title: "Swimming towel 3",
-    image: "/images/towel_products/swimming_towel/swimming_towel_3.jpeg",
+    image: "/images/towel_products/swimming_towel/swimming_towel_3.JPEG",
   },
   {
     type: "swimming_towel",
