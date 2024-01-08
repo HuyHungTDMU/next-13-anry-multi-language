@@ -23,6 +23,22 @@ export default async function NewsPage() {
           text={"t41"}
           className="!-mt-12 !font-bold !text-[#031E2F]"
         />
+
+        <div style={{ width: '100%', height: '100vh', overflow: 'hidden' }}>
+          <iframe
+            style={{
+              width: '100%',
+              height: '100%',
+              border: 'none', // Optional: remove iframe border
+            }}
+            src="https://www.youtube.com/embed/HYt_KghUyeU?si=s3yBSHT2r5F2wJpB"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Embedded youtube"
+          />
+        </div>
+
         <div dangerouslySetInnerHTML={{ __html: data }} />
         {/*{data?.length ? (*/}
         {/*  data.map((item: any, index: number) => (*/}

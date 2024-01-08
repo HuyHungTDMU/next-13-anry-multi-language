@@ -35,16 +35,6 @@ export default function AboutPage() {
 
             <p className="!text-gray-800 !font-serif !italic">{t("t26")}</p>
           </div>
-          
-          <iframe
-            width="360"
-            height="165"
-            src="https://www.youtube.com/embed/HYt_KghUyeU?si=s3yBSHT2r5F2wJpB"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title="Embedded youtube"
-          />
 
           <div className="flex gap-4 flex-wrap items-center justify-center">
             <MotionImage
