@@ -10,12 +10,12 @@ export default async function NewsPage() {
   return (
     <PageLayout>
       <div className="flex flex-col gap-4 xl:gap-x-8 xl:space-y-0 pb-7 px-7 sm:px-16 lg:px-32">
-        <div className="h-[500px]">
+        <div className="h-[400px]">
           <Image
             fill={true}
             src={imgBanner}
             alt="banner"
-            className="max-h-[500px]"
+            className="max-h-[400px]"
           />
         </div>
 
