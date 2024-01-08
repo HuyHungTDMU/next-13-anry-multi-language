@@ -36,7 +36,13 @@ export default function AboutPage() {
             <p className="!text-gray-800 !font-serif !italic">{t("t26")}</p>
           </div>
 
-          <iframe className="border border-b-sky-600 w-full h-auto rounded-xl" src="https://www.youtube.com/embed/HYt_KghUyeU?si=nO6H9PDi3JZHIT-i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe 
+        src="https://www.youtube.com/embed/HYt_KghUyeU?si=nO6H9PDi3JZHIT-i" 
+        frameborder="0"
+        scrolling="no" 
+        style="overflow:hidden;height:100%;width:100%" 
+        height="100%" 
+     width="100%"></iframe>
 
           <div className="flex gap-4 flex-wrap items-center justify-center">
             <MotionImage
