@@ -18,17 +18,18 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-import parner1 from "../../../public/images/parners/1.png";
+import parner1 from "../../../public/images/parners/1.jpg";
 import parner2 from "../../../public/images/parners/2.jpg";
 import parner3 from "../../../public/images/parners/3.jpg";
-import parner4 from "../../../public/images/parners/4.png";
+import parner4 from "../../../public/images/parners/4.jpg";
 import parner5 from "../../../public/images/parners/5.jpg";
 import parner6 from "../../../public/images/parners/6.jpg";
 import parner7 from "../../../public/images/parners/7.jpg";
 import parner8 from "../../../public/images/parners/8.jpg";
 import parner9 from "../../../public/images/parners/9.jpg";
-import parner10 from "../../../public/images/parners/10.png";
-import parner11 from "../../../public/images/parners/11.png";
+import parner10 from "../../../public/images/parners/10.jpg";
+import parner11 from "../../../public/images/parners/11.jpg";
+import parner12 from "../../../public/images/parners/12.jpg";
 
 import factory_1 from "../../../public/images/factory/factory_1.jpg";
 import factory_2 from "../../../public/images/factory/factory_2.jpg";
@@ -36,11 +37,30 @@ import factory_3 from "../../../public/images/factory/factory_3.jpg";
 import factory_4 from "../../../public/images/factory/factory_4.jpg";
 import factory_5 from "../../../public/images/factory/factory_5.jpg";
 import factory_6 from "../../../public/images/factory/factory_6.jpg";
+
+import hospital1 from "../../../public/images/towel_products/hospital/hospital1.jpg";
+import hospital2 from "../../../public/images/towel_products/hospital/hospital2.jpg";
+import hospital3 from "../../../public/images/towel_products/hospital/hospital3.jpg";
+import hospital4 from "../../../public/images/towel_products/hospital/hospital4.jpg";
+import hospital5 from "../../../public/images/towel_products/hospital/hospital5.jpg";
+
+import Banquet1 from "../../../public/images/towel_products/Banquet/Banquet1.jpg";
+import Banquet2 from "../../../public/images/towel_products/Banquet/Banquet2.jpg";
+import Banquet3 from "../../../public/images/towel_products/Banquet/Banquet3.jpg";
+
+import Bath1 from "../../../public/images/towel_products/Bath/Bath1.jpg";
+import Bath2 from "../../../public/images/towel_products/Bath/Bath2.jpg";
+import Bath3 from "../../../public/images/towel_products/Bath/Bath3.jpg";
+import Bath4 from "../../../public/images/towel_products/Bath/Bath4.jpg";
+import Bath5 from "../../../public/images/towel_products/Bath/Bath5.jpg";
+
 import imgVision from "../../../public/images/home/vision.jpeg";
 import AnimatedText from "../../components/AnimatedText";
 import HireMe from "../../components/HireMe";
 import DialogPreViewFactory from "../../components/DialogPreviewFactory";
 import ListBanner from "components/ListBanner";
+
+
 
 const MotionImage = motion(Image);
 
@@ -159,11 +179,6 @@ export default function IndexPage() {
 
   return (
     <PageLayout>
-      <img
-        src="/images/banner.jpg"
-        alt="banner"
-        className="fixed top-0 -z-10 left-0 w-auto h-screen opacity-20 object-cover object-center"
-      />
 
       <div className="flex items-center text-dark w-full">
         <div className="w-full h-full inline-block z-0 bg-light pb-7 px-7 sm:px-16 lg:px-32">
@@ -173,38 +188,111 @@ export default function IndexPage() {
               <ListBanner/>
             </div>
 
-            <div className="xl:w-1/2 w-full flex flex-col items-center self-center p-6 bg-neutral-50 border border-[#031E2F] rounded-2xl">
+              <div className="xl:w-1/2 w-full flex flex-col items-center self-center p-6 bg-neutral-50 border border-[#031E2F] rounded-2xl">
               <AnimatedText
-                text={"t7"}
+                text={"t8"}
                 className="!text-6xl !text-left !font-serif !italic !text-[#031E2F]"
               />
-
-              <p className="my-4 text-base font-medium">
-                {t("t8")}
-                <br />
-                {t("t9")}
+              <p className="my-4 text-base font-bold">
+                {t("t7")}
               </p>
-
-              <div className="flex items-center mt-2 self-start gap-4">
-                <Link
-                  className="flex items-center bg-dark text-light hover:bg-white hover:text-dark border border-solid p-2.5 px-6 rounded-lg border-transparent hover:border-dark text-lg font-semibold"
-                  href="/dummy.pdf"
-                  target="_blank"
-                  download={true}
-                >
-                  {t("t10")}
-                </Link>
-                <Link
-                  className="text-lg font-medium capitalize text-dark underline"
-                  href="/contact"
-                >
-                  {t("t11")}
-                </Link>
-              </div>
             </div>
           </div>
 
           <div className="space-y-7 text-dark text-base mt-7 flex flex-col items-center justify-center rounded bg-neutral-50">
+
+            <div className="w-full flex items-center pt-10">
+              <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">
+                {t("t10")}:
+              </p>
+            </div>
+
+            <div className="w-full flex items-center pt-10">
+              <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">
+                {t("t11")}:
+              </p>
+            </div>
+
+            <div className="w-full flex flex-col items-center justify-center space-y-4">
+              <p className="px-4 w-full">
+              </p>
+
+              <div className="gap-9 flex flex-wrap items-center justify-center">
+                <MotionImage
+                  src={Bath1}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Bath1)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+
+                <MotionImage
+                  src={Bath2}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Bath2)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+                <MotionImage
+                  src={Bath3}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Bath3)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+                <MotionImage
+                  src={Bath4}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Bath4)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+                <MotionImage
+                  src={Bath5}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Bath5)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+              </div>
+            </div>
+            
+            <div className="w-full flex items-center pt-10">
+              <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">
+                {t("t13")}:
+              </p>
+            </div>
+            
+            <div className="w-full flex flex-col items-center justify-center space-y-4">
+              <p className="px-4 w-full">
+                </p>
+
+              <div className="gap-9 flex flex-wrap items-center justify-center">
+                <MotionImage
+                  src={Banquet1}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Banquet1)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+
+                <MotionImage
+                  src={Banquet2}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Banquet2)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+                <MotionImage
+                  src={Banquet3}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Banquet3)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+              </div>
+            </div>
+
             <div className="w-full flex items-center">
               <p className="text-xl text-left rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">
                 {t("t12")}:
@@ -213,63 +301,48 @@ export default function IndexPage() {
 
             <div className="w-full flex flex-col items-center justify-center space-y-4">
               <p className="px-4 w-full">
-                {t("t13")}
-                <br />
-                <br />
-                {t("t14")}
-                <br />
-                <br />
-                {t("t15")}
-                <br />
-                <br />
-                {t("t16")}
-              </p>
+                </p>
 
               <div className="gap-9 flex flex-wrap items-center justify-center">
                 <MotionImage
-                  src={factory_1}
+                  src={hospital1}
                   alt="imgMuongThanh"
                   whileHover={{ scale: 1.05 }}
-                  onClick={() => onPreviewImage(factory_1)}
+                  onClick={() => onPreviewImage(hospital1)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+
+                <MotionImage
+                  src={hospital2}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(hospital2)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
-                  src={factory_2}
+                  src={hospital3}
                   alt="imgMuongThanh"
                   whileHover={{ scale: 1.05 }}
-                  onClick={() => onPreviewImage(factory_2)}
+                  onClick={() => onPreviewImage(hospital3)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
-                  src={factory_3}
+                  src={hospital4}
                   alt="imgMuongThanh"
                   whileHover={{ scale: 1.05 }}
-                  onClick={() => onPreviewImage(factory_3)}
+                  onClick={() => onPreviewImage(hospital4)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
-                  src={factory_4}
+                  src={hospital5}
                   alt="imgMuongThanh"
                   whileHover={{ scale: 1.05 }}
-                  onClick={() => onPreviewImage(factory_4)}
+                  onClick={() => onPreviewImage(hospital5)}
                   className="h-44 rounded-2xl w-auto"
-                />
-                <MotionImage
-                  src={factory_5}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
-                  onClick={() => onPreviewImage(factory_5)}
-                  className="h-44 rounded-2xl w-auto"
-                />
-                <MotionImage
-                  src={factory_6}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
-                  onClick={() => onPreviewImage(factory_6)}
-                  className="h-44 rounded-2xl w-auto"
-                />
+                /> 
               </div>
             </div>
+
 
             <div className="w-full flex items-center pt-10">
               <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">
@@ -294,7 +367,7 @@ export default function IndexPage() {
             </div>
 
             <div className="text-2xl font-semibold gap-2 flex items-center pt-10 ">
-              {t("t21")}:
+              {t("t21")}
               <span className="rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white">
                 {t("t22")}
               </span>
@@ -366,6 +439,12 @@ export default function IndexPage() {
                   <MotionImage
                     src={parner11}
                     alt="parner11"
+                    whileHover={{ scale: 1.02 }}
+                    className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
+                  />
+                  <MotionImage
+                    src={parner12}
+                    alt="parner12"
                     whileHover={{ scale: 1.02 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />

@@ -350,6 +350,37 @@ const products = [
     title: "Swimming towel 7",
     image: "/images/towel_products/swimming_towel/swimming_towel_7.jpg",
   },
+
+  {
+    type: "hospital",
+    subTitle: "Hospital bed set",
+    title: "High-end hospital bed set",
+    image: "/images/towel_products/hospital/hospital1.jpg",
+  },
+  {
+    type: "hospital",
+    subTitle: "Hospital towels",
+    title: "High quality hospital towels",
+    image: "/images/towel_products/hospital/hospital2.jpg",
+  },
+  {
+    type: "hospital",
+    subTitle: "Medical mattress",
+    title: "High quality medical mattress",
+    image: "/images/towel_products/hospital/hospital3.jpg",
+  },
+  {
+    type: "hospital",
+    subTitle: "Hospital bed set",
+    title: "High-end hospital bed set",
+    image: "/images/towel_products/hospital/hospital4.jpg",
+  },
+  {
+    type: "hospital",
+    subTitle: "Hospital bed set",
+    title: "High-end hospital bed set",
+    image: "/images/towel_products/hospital/hospital5.jpg",
+  },
 ];
 
 export async function GET() {
