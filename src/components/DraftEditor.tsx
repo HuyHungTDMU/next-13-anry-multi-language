@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
-import { CKEditor } from "@ckeditor/ckeditor5-react";
+// import { CKEditor } from "@ckeditor/ckeditor5-react";
 import { apiUpdateNews } from "../lib/api-request";
 
 type EditorDemoProps = {
@@ -43,21 +43,21 @@ export default function EditorDemo(props: EditorDemoProps): JSX.Element {
 
   return (
     <div className="space-y-4">
-      <CKEditor
-        editor={ClassicEditor}
-        id={state.documentID}
-        disableWatchdog={isWatchdogDisabled}
-        data={state.documents[state.documentID]}
-        watchdogConfig={{ crashNumberLimit: 10 }}
-        onReady={(editor) => {
-          // let window: any;
-          // window.editor = editor;
-          setState((prevState) => ({ ...prevState, editor }));
-        }}
-        onChange={(event, editor) => {
-          updateData();
-        }}
-      />
+      {/*<CKEditor*/}
+      {/*  editor={ClassicEditor}*/}
+      {/*  id={state.documentID}*/}
+      {/*  disableWatchdog={isWatchdogDisabled}*/}
+      {/*  data={state.documents[state.documentID]}*/}
+      {/*  watchdogConfig={{ crashNumberLimit: 10 }}*/}
+      {/*  onReady={(editor) => {*/}
+      {/*    // let window: any;*/}
+      {/*    // window.editor = editor;*/}
+      {/*    setState((prevState) => ({ ...prevState, editor }));*/}
+      {/*  }}*/}
+      {/*  onChange={(event, editor) => {*/}
+      {/*    updateData();*/}
+      {/*  }}*/}
+      {/*/>*/}
 
       <button
         className="border-b-cyan-900 border py-2 px-4 rounded"
