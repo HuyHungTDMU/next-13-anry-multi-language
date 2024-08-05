@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import logoVN from "../../public/images/logoVN.png";
-import { SvgFacebook, SvgInstagram, SvgLinkedin, SvgTwitter } from "./Icons";
+import { SvgFacebook, SvgInstagram, SvgTwitter } from "./Icons";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
