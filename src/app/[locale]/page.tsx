@@ -54,6 +54,14 @@ import Bath3 from "../../../public/images/towel_products/Bath/Bath3.jpg";
 import Bath4 from "../../../public/images/towel_products/Bath/Bath4.jpg";
 import Bath5 from "../../../public/images/towel_products/Bath/Bath5.jpg";
 
+import Bed1 from "../../../public/images/towel_products/BedLinen/bed1.jpg";
+import Bed2 from "../../../public/images/towel_products/BedLinen/bed2.jpg";
+import Bed3 from "../../../public/images/towel_products/BedLinen/bed3.jpg";
+import Bed4 from "../../../public/images/towel_products/BedLinen/bed4.jpg";
+import Bed5 from "../../../public/images/towel_products/BedLinen/bed5.jpg";
+import Bed6 from "../../../public/images/towel_products/BedLinen/bed6.jpg";
+import Bed7 from "../../../public/images/towel_products/BedLinen/bed7.jpg";
+
 import imgVision from "../../../public/images/home/vision.jpeg";
 import AnimatedText from "../../components/AnimatedText";
 import HireMe from "../../components/HireMe";
@@ -205,6 +213,64 @@ export default function IndexPage() {
               <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">
                 {t("t10")}:
               </p>
+            </div>
+
+            <div className="w-full flex flex-col items-center justify-center space-y-4">
+              <p className="px-4 w-full">
+              </p>
+
+              <div className="gap-9 flex flex-wrap items-center justify-center">
+                <MotionImage
+                  src={Bed1}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Bed1)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+
+                <MotionImage
+                  src={Bed2}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Bed2)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+                <MotionImage
+                  src={Bed3}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Bed3)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+                <MotionImage
+                  src={Bed4}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Bed4)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+                <MotionImage
+                  src={Bed5}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Bed5)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+                 <MotionImage
+                  src={Bed6}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Bed6)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+                <MotionImage
+                  src={Bed7}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => onPreviewImage(Bed7)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+              </div>
             </div>
 
             <div className="w-full flex items-center pt-10">
