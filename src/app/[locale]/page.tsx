@@ -17,7 +17,6 @@ import { wrap } from "@motionone/utils";
 import Link from "next/link";
 import Image from "next/image";
 
-
 import parner1 from "../../../public/images/parners/1.jpg";
 import parner2 from "../../../public/images/parners/2.jpg";
 import parner3 from "../../../public/images/parners/3.jpg";
@@ -67,8 +66,6 @@ import AnimatedText from "../../components/AnimatedText";
 import HireMe from "../../components/HireMe";
 import DialogPreViewFactory from "../../components/DialogPreviewFactory";
 import ListBanner from "components/ListBanner";
-
-
 
 const MotionImage = motion(Image);
 
@@ -187,28 +184,25 @@ export default function IndexPage() {
 
   return (
     <PageLayout>
-
-      <div className="flex items-center text-dark w-full">
-        <div className="w-full h-full inline-block z-0 bg-light pb-7 px-7 sm:px-16 lg:px-32">
-          <div className="flex flex-col xl:flex-row items-center justify-between w-full gap-7 mt-10">
-            <div className="xl:w-1/2 w-full">
-              {/* <Slideshow /> */}
-              <ListBanner/>
-            </div>
-
-              <div className="xl:w-1/2 w-full flex flex-col items-center self-center p-6 bg-neutral-50 border border-[#031E2F] rounded-2xl">
+      <div className="items-center inline-block text-dark w-full">
+        <div className="flex items-center justify-between w-full mt-4">
+          <div className="w-full">
+            {/* <Slideshow /> */}
+            <ListBanner />
+          </div>
+        </div>
+        <div className="w-full h-full z-0 bg-light pb-7 px-7 sm:px-16 lg:px-32">
+          <div className="w-full flex items-center justify-center">
+            <div className="w-3/4 flex flex-col items-center self-center mt-6 p-6 bg-neutral-50 border border-[#031E2F] rounded-2xl">
               <AnimatedText
                 text={"t8"}
                 className="!text-6xl !text-left !font-serif !italic !text-[#031E2F]"
               />
-              <p className="my-4 text-base font-bold">
-                {t("t7")}
-              </p>
+              <p className="my-4 text-base font-bold">{t("t7")}</p>
             </div>
           </div>
 
           <div className="space-y-7 text-dark text-base mt-7 flex flex-col items-center justify-center rounded bg-neutral-50">
-
             <div className="w-full flex items-center pt-10">
               <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">
                 {t("t10")}:
@@ -216,8 +210,7 @@ export default function IndexPage() {
             </div>
 
             <div className="w-full flex flex-col items-center justify-center space-y-4">
-              <p className="px-4 w-full">
-              </p>
+              <p className="px-4 w-full"></p>
 
               <div className="gap-9 flex flex-wrap items-center justify-center">
                 <MotionImage
@@ -256,7 +249,7 @@ export default function IndexPage() {
                   onClick={() => onPreviewImage(Bed5)}
                   className="h-44 rounded-2xl w-auto"
                 />
-                 <MotionImage
+                <MotionImage
                   src={Bed6}
                   alt="imgMuongThanh"
                   whileHover={{ scale: 1.05 }}
@@ -280,8 +273,7 @@ export default function IndexPage() {
             </div>
 
             <div className="w-full flex flex-col items-center justify-center space-y-4">
-              <p className="px-4 w-full">
-              </p>
+              <p className="px-4 w-full"></p>
 
               <div className="gap-9 flex flex-wrap items-center justify-center">
                 <MotionImage
@@ -322,16 +314,15 @@ export default function IndexPage() {
                 />
               </div>
             </div>
-            
+
             <div className="w-full flex items-center pt-10">
               <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">
                 {t("t13")}:
               </p>
             </div>
-            
+
             <div className="w-full flex flex-col items-center justify-center space-y-4">
-              <p className="px-4 w-full">
-                </p>
+              <p className="px-4 w-full"></p>
 
               <div className="gap-9 flex flex-wrap items-center justify-center">
                 <MotionImage
@@ -366,8 +357,7 @@ export default function IndexPage() {
             </div>
 
             <div className="w-full flex flex-col items-center justify-center space-y-4">
-              <p className="px-4 w-full">
-                </p>
+              <p className="px-4 w-full"></p>
 
               <div className="gap-9 flex flex-wrap items-center justify-center">
                 <MotionImage
@@ -405,10 +395,9 @@ export default function IndexPage() {
                   whileHover={{ scale: 1.05 }}
                   onClick={() => onPreviewImage(hospital5)}
                   className="h-44 rounded-2xl w-auto"
-                /> 
+                />
               </div>
             </div>
-
 
             <div className="w-full flex items-center pt-10">
               <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">

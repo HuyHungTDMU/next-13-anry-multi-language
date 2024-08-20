@@ -65,15 +65,15 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col items-center">
-          <div className="flex flex-col gap-3 w-full justify-center items-center mt-2 mb-8 -mx-2">
-            <div className="mx-2 items-center justify-center flex p-2">
-              <img
-                src="/images/logo_hiephoikhan.png"
-                alt="logo-hiephoikhan"
-                className="w-[90px] h-[100px] object-center object-cover rounded"
-              />
-            </div>
+        <div className="flex gap-3 flex-col items-center">
+          <div className="mx-2 items-center justify-center flex p-2">
+            <img
+              src="/images/logo_hiephoikhan.png"
+              alt="logo-hiephoikhan"
+              className="w-[90px] h-[100px] object-center object-cover rounded"
+            />
+          </div>
+          <div className="flex gap-3 w-full justify-center items-center mt-2 mb-8 -mx-2">
             <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-md">
               <SvgFacebook className="h-6 w-6" />
             </div>
