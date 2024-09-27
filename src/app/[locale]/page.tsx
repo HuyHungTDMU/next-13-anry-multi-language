@@ -426,13 +426,13 @@ export default function IndexPage() {
                 {t("t17")}:
               </p>
             </div>
-
-            <div className="w-full flex gap-4">
+            
+            <div className="gap-9 flex flex-wrap justify-left">
               <MotionImage
                 src={imgVision}
                 alt="imgMuongThanh"
-                whileHover={{ scale: 1 }}
-                className="h-45 rounded-r-2xl w-auto"
+                whileHover={{ scale: 3 }}
+                className="h-44 rounded-r-2xl w-auto"
               />
 
               <p className="text-left">

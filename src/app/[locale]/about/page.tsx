@@ -46,59 +46,7 @@ export default function AboutPage() {
 
             <p className="!text-gray-800 !font-serif !italic">{t("t26")}</p>
           </div>
-
-          <div className="flex gap-4 flex-wrap items-center justify-center">
-            <MotionImage
-              src={imgPhong1}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 4.05 }}
-              className="h-24 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgPhong2}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 4.05 }}
-              className="h-24 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgPhong3}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 4.05 }}
-              className="h-24 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgPhong9}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 4.05 }}
-              className="h-24 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgPhong5}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 4.05 }}
-              className="h-24 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgPhong6}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 4.05 }}
-              className="h-24 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgPhong7}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 4.05 }}
-              className="h-24 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgPhong8}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 4.05 }}
-              className="h-24 rounded-2xl w-auto"
-            />
-
-          </div>
-
+          
           <AnimatedText
             text={"t29"}
             className="mb-5 !font-serif !italic !text-[#031E2F]"
