@@ -67,7 +67,6 @@ export default function AboutPage() {
                 {t("t30")}</p>
             </div>
 
-            <p>{t("t31")}</p>
             <Image
               src={imgAbout3}
               alt="about"
