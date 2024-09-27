@@ -431,7 +431,7 @@ export default function IndexPage() {
               <MotionImage
                 src={imgVision}
                 alt="imgMuongThanh"
-                whileHover={{ scale: 3 }}
+                whileHover={{ scale: 1 }}
                 className="h-45 rounded-r-2xl w-auto"
               />
 
