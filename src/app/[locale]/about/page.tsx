@@ -139,7 +139,7 @@ export default function AboutPage() {
             <p className="w-full">{t("t45")}</p>
          </div>
 
-          <div className="gap-9 flex flex-wrap justify-left">
+          <div className="flex gap-4 flex-wrap items-center justify-center">
             <MotionImage
               src={imgFatory5}
               alt="imgMuongThanh"
