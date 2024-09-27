@@ -40,7 +40,7 @@ export default async function NewsPage() {
           />
         </div>
 
-        {<div dangerouslySetInnerHTML={{ __html: data }} />}
+        {/*<div dangerouslySetInnerHTML={{ __html: data }} />}
         {/*{data?.length ? (*/}
         {/*  data.map((item: any, index: number) => (*/}
         {/*    <div*/}
