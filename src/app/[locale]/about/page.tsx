@@ -80,25 +80,25 @@ export default function AboutPage() {
             <MotionImage
               src={imgFatory1}
               alt="imgMuongThanh"
-              whileHover={{ scale: 3.05 }}
+              whileHover={{ scale: 1 }}
               className="h-25 rounded-2xl w-auto"
             />
             <MotionImage
               src={imgFatory2}
               alt="imgMuongThanh"
-              whileHover={{ scale: 3.05 }}
+              whileHover={{ scale: 1 }}
               className="h-25 rounded-2xl w-auto"
             />
             <MotionImage
               src={imgFatory3}
               alt="imgMuongThanh"
-              whileHover={{ scale: 3.05 }}
+              whileHover={{ scale: 1 }}
               className="h-25 rounded-2xl w-auto"
             />
             <MotionImage
               src={imgFatory4}
               alt="imgMuongThanh"
-              whileHover={{ scale: 3.05 }}
+              whileHover={{ scale: 1 }}
               className="h-25 rounded-2xl w-auto"
             />
           </div>
@@ -143,37 +143,37 @@ export default function AboutPage() {
             <MotionImage
               src={imgFatory5}
               alt="imgMuongThanh"
-              whileHover={{ scale: 3.05 }}
+              whileHover={{ scale: 1 }}
               className="h-25 rounded-2xl w-auto"
             />
             <MotionImage
               src={imgFatory6}
               alt="imgMuongThanh"
-              whileHover={{ scale: 3.05 }}
+              whileHover={{ scale: 1 }}
               className="h-25 rounded-2xl w-auto"
             />
             <MotionImage
               src={imgFatory7}
               alt="imgMuongThanh"
-              whileHover={{ scale: 3.05 }}
+              whileHover={{ scale: 1 }}
               className="h-25 rounded-2xl w-auto"
             />
             <MotionImage
               src={imgFatory8}
               alt="imgMuongThanh"
-              whileHover={{ scale: 3.05 }}
+              whileHover={{ scale: 1 }}
               className="h-25 rounded-2xl w-auto"
             />
             <MotionImage
               src={imgFatory9}
               alt="imgMuongThanh"
-              whileHover={{ scale: 3.05 }}
+              whileHover={{ scale: 1 }}
               className="h-25 rounded-2xl w-auto"
             />
             <MotionImage
               src={imgFatory10}
               alt="imgMuongThanh"
-              whileHover={{ scale: 3.05 }}
+              whileHover={{ scale: 1 }}
               className="h-25 rounded-2xl w-auto"
             />
           </div>
