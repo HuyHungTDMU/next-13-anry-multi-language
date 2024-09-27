@@ -6,19 +6,20 @@ import { apiFetchNews } from "../../../lib/api-request";
 
 export default async function NewsPage() {
   const data = await apiFetchNews();
-
   return (
     <PageLayout>
       <div className="flex flex-col gap-4 xl:gap-x-8 xl:space-y-0 pb-7 px-7 sm:px-16 lg:px-32">
         <div className="h-[400px]">
           <Image
-            fill={true}
             src={imgBanner}
             alt="banner"
             className="max-h-[400px]"
           />
         </div>
-
+        <AnimatedText
+          text={"t44"}
+          className="!-mt-12 !font-bold !text-[#031E2F]"
+        />
         <AnimatedText
           text={"t41"}
           className="!-mt-12 !font-bold !text-[#031E2F]"
@@ -39,7 +40,7 @@ export default async function NewsPage() {
           />
         </div>
 
-        <div dangerouslySetInnerHTML={{ __html: data }} />
+        {<div dangerouslySetInnerHTML={{ __html: data }} />}
         {/*{data?.length ? (*/}
         {/*  data.map((item: any, index: number) => (*/}
         {/*    <div*/}

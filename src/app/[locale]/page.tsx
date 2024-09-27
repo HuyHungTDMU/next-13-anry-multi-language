@@ -60,12 +60,14 @@ import Bed4 from "../../../public/images/towel_products/BedLinen/bed4.jpg";
 import Bed5 from "../../../public/images/towel_products/BedLinen/bed5.jpg";
 import Bed6 from "../../../public/images/towel_products/BedLinen/bed6.jpg";
 import Bed7 from "../../../public/images/towel_products/BedLinen/bed7.jpg";
+import Bed8 from "../../../public/images/towel_products/BedLinen/bed8.jpg";
 
 import imgVision from "../../../public/images/home/vision.jpeg";
 import AnimatedText from "../../components/AnimatedText";
 import HireMe from "../../components/HireMe";
 import DialogPreViewFactory from "../../components/DialogPreviewFactory";
 import ListBanner from "components/ListBanner";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
 const MotionImage = motion(Image);
 
@@ -103,6 +105,7 @@ const Slideshow = () => {
     </div>
   );
 };
+
 
 function ParallaxText({
   children,
@@ -193,7 +196,7 @@ export default function IndexPage() {
         </div>
         <div className="w-full h-full z-0 bg-light pb-7 px-7 sm:px-16 lg:px-32">
           <div className="w-full flex items-center justify-center">
-            <div className="w-3/4 flex flex-col items-center self-center mt-6 p-6 bg-neutral-50 border border-[#031E2F] rounded-2xl">
+            <div className="w-4/4 flex flex-col items-center self-center mt-6 p-6 bg-neutral-50 border border-[#031E2F] rounded-2xl">
               <AnimatedText
                 text={"t8"}
                 className="!text-6xl !text-left !font-serif !italic !text-[#031E2F]"
@@ -216,7 +219,7 @@ export default function IndexPage() {
                 <MotionImage
                   src={Bed1}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3}}
                   onClick={() => onPreviewImage(Bed1)}
                   className="h-44 rounded-2xl w-auto"
                 />
@@ -224,47 +227,66 @@ export default function IndexPage() {
                 <MotionImage
                   src={Bed2}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(Bed2)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bed3}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(Bed3)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bed4}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(Bed4)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bed5}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(Bed5)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bed6}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(Bed6)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bed7}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(Bed7)}
                   className="h-44 rounded-2xl w-auto"
                 />
               </div>
             </div>
+
+            <div className="w-full flex items-center pt-10">
+              <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">
+                {t("t19")}:
+              </p>
+            </div> 
+            <div className="w-full flex flex-col items-center justify-center space-y-4">
+              <p className="px-4 w-full"></p>
+
+              <div className="gap-9 flex flex-wrap items-center justify-center">
+                <MotionImage
+                  src={Bed8}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 3 }}
+                  onClick={() => onPreviewImage(Bed8)}
+                  className="h-44 rounded-2xl w-auto"
+                />
+              </div>
+            </div> 
 
             <div className="w-full flex items-center pt-10">
               <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">
@@ -279,7 +301,7 @@ export default function IndexPage() {
                 <MotionImage
                   src={Bath1}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(Bath1)}
                   className="h-44 rounded-2xl w-auto"
                 />
@@ -287,28 +309,28 @@ export default function IndexPage() {
                 <MotionImage
                   src={Bath2}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(Bath2)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bath3}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(Bath3)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bath4}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(Bath4)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bath5}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(Bath5)}
                   className="h-44 rounded-2xl w-auto"
                 />
@@ -328,7 +350,7 @@ export default function IndexPage() {
                 <MotionImage
                   src={Banquet1}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(Banquet1)}
                   className="h-44 rounded-2xl w-auto"
                 />
@@ -336,14 +358,14 @@ export default function IndexPage() {
                 <MotionImage
                   src={Banquet2}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(Banquet2)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Banquet3}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(Banquet3)}
                   className="h-44 rounded-2xl w-auto"
                 />
@@ -363,7 +385,7 @@ export default function IndexPage() {
                 <MotionImage
                   src={hospital1}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(hospital1)}
                   className="h-44 rounded-2xl w-auto"
                 />
@@ -371,28 +393,28 @@ export default function IndexPage() {
                 <MotionImage
                   src={hospital2}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(hospital2)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={hospital3}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(hospital3)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={hospital4}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(hospital4)}
                   className="h-44 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={hospital5}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 3 }}
                   onClick={() => onPreviewImage(hospital5)}
                   className="h-44 rounded-2xl w-auto"
                 />
@@ -406,16 +428,17 @@ export default function IndexPage() {
             </div>
 
             <div className="w-full flex gap-4">
-              <Image
+              <MotionImage
                 src={imgVision}
                 alt="imgMuongThanh"
-                className="h-40 rounded-r-2xl w-auto"
+                whileHover={{ scale: 3 }}
+                className="h-45 rounded-r-2xl w-auto"
               />
 
               <p className="text-left">
                 {t("t18")}
                 <br />
-                {t("t19")}
+                {t("t20")}
                 <br />
                 {t("t20")}
               </p>
@@ -434,73 +457,73 @@ export default function IndexPage() {
                   <MotionImage
                     src={parner1}
                     alt="parner1"
-                    whileHover={{ scale: 1.02 }}
+                    whileHover={{ scale: 1.5 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
                     src={parner2}
                     alt="imgMuonparner2Thanh"
-                    whileHover={{ scale: 1.02 }}
+                    whileHover={{ scale: 1.5 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
                     src={parner3}
                     alt="parner3"
-                    whileHover={{ scale: 1.02 }}
+                    whileHover={{ scale: 1.5 }}
                     className="h-32 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
                     src={parner4}
                     alt="parner4"
-                    whileHover={{ scale: 1.02 }}
+                    whileHover={{ scale: 1.5 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
                     src={parner5}
                     alt="parner5"
-                    whileHover={{ scale: 1.02 }}
+                    whileHover={{ scale: 1.5 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
                     src={parner6}
                     alt="parner6"
-                    whileHover={{ scale: 1.02 }}
+                    whileHover={{ scale: 1.5 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
                     src={parner7}
                     alt="parner7"
-                    whileHover={{ scale: 1.02 }}
+                    whileHover={{ scale: 1.5 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
                     src={parner8}
                     alt="parner8"
-                    whileHover={{ scale: 1.02 }}
+                    whileHover={{ scale: 1.5 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
                     src={parner9}
                     alt="parner9"
-                    whileHover={{ scale: 1.02 }}
+                    whileHover={{ scale: 1.5 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
                     src={parner10}
                     alt="parner10"
-                    whileHover={{ scale: 1.02 }}
+                    whileHover={{ scale: 1.5 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
                     src={parner11}
                     alt="parner11"
-                    whileHover={{ scale: 1.02 }}
+                    whileHover={{ scale: 1.5 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
                     src={parner12}
                     alt="parner12"
-                    whileHover={{ scale: 1.02 }}
+                    whileHover={{ scale: 1.5 }}
                     className="h-44 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                 </div>
