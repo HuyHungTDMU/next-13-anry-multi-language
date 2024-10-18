@@ -220,7 +220,7 @@ export default function IndexPage() {
                 <MotionImage
                   src={Bed1}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3}}
+                  whileHover={{ scale: 2}}
                   onClick={() => onPreviewImage(Bed1)}
                   className="h-52 rounded-2xl w-auto"
                 />
@@ -228,42 +228,42 @@ export default function IndexPage() {
                 <MotionImage
                   src={Bed2}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Bed2)}
                   className="h-52 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bed3}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Bed3)}
                   className="h-52 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bed4}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Bed4)}
                   className="h-52 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bed5}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Bed5)}
                   className="h-52 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bed6}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Bed6)}
                   className="h-52 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bed7}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Bed7)}
                   className="h-52 rounded-2xl w-auto"
                 />
@@ -282,7 +282,7 @@ export default function IndexPage() {
                 <MotionImage
                   src={Bed8}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Bed8)}
                   className="h-52 rounded-2xl w-auto"
                 />
@@ -302,7 +302,7 @@ export default function IndexPage() {
                 <MotionImage
                   src={Bath1}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Bath1)}
                   className="h-52 rounded-2xl w-auto"
                 />
@@ -310,28 +310,28 @@ export default function IndexPage() {
                 <MotionImage
                   src={Bath2}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Bath2)}
                   className="h-52 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bath3}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Bath3)}
                   className="h-52 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bath4}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Bath4)}
                   className="h-52 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Bath5}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Bath5)}
                   className="h-52 rounded-2xl w-auto"
                 />
@@ -351,7 +351,7 @@ export default function IndexPage() {
                 <MotionImage
                   src={Banquet1}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Banquet1)}
                   className="h-52 rounded-2xl w-auto"
                 />
@@ -359,14 +359,14 @@ export default function IndexPage() {
                 <MotionImage
                   src={Banquet2}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Banquet2)}
                   className="h-52 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={Banquet3}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(Banquet3)}
                   className="h-52 rounded-2xl w-auto"
                 />
@@ -386,7 +386,7 @@ export default function IndexPage() {
                 <MotionImage
                   src={hospital1}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(hospital1)}
                   className="h-52 rounded-2xl w-auto"
                 />
@@ -394,28 +394,28 @@ export default function IndexPage() {
                 <MotionImage
                   src={hospital2}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(hospital2)}
                   className="h-52 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={hospital3}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(hospital3)}
                   className="h-52 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={hospital4}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(hospital4)}
                   className="h-52 rounded-2xl w-auto"
                 />
                 <MotionImage
                   src={hospital5}
                   alt="imgMuongThanh"
-                  whileHover={{ scale: 3 }}
+                  whileHover={{ scale: 2 }}
                   onClick={() => onPreviewImage(hospital5)}
                   className="h-52 rounded-2xl w-auto"
                 />
@@ -432,7 +432,7 @@ export default function IndexPage() {
               <MotionImage
                 src={imgVision}
                 alt="imgMuongThanh"
-                whileHover={{ scale: 3 }}
+                whileHover={{ scale: 2 }}
                 className="h-52 rounded-r-2xl w-auto"
               />
 
