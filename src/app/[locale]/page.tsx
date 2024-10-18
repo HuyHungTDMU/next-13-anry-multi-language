@@ -160,7 +160,7 @@ function ParallaxText({
    * dynamically generated number of children.
    */
   return (
-    <div className="overflow-hidden max-w-4xl">
+    <div className="overflow-hidden .max-w-\[460px\]">
       <motion.div
         className="flex flex-nowrap whitespace-nowrap gap-8"
         style={{ x }}
@@ -454,7 +454,7 @@ export default function IndexPage() {
 
             <section>
               <ParallaxText baseVelocity={-5}>
-                <div className="flex min-w-0 items-center gap-8 flex-nowrap">
+                <div className="flex .max-w-\[460px\] items-center gap-8 flex-nowrap">
                   <MotionImage
                     src={parner1}
                     alt="parner1"
