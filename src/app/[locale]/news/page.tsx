@@ -82,36 +82,36 @@ export default function NewsPage() {
               <Image
                 src={News1}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+               className="h-44 rounded-2xl max-w-44"
               />
 
               <Image
                 src={News2}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+               className="h-44 rounded-2xl max-w-44"
               />
 
               <Image
                 src={News3}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+                className="h-44 rounded-2xl max-w-44"
               />
 
               <Image
                 src={News4}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+               className="h-44 rounded-2xl max-w-44"
               />
                             <Image
                 src={News5}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+               className="h-44 rounded-2xl max-w-44"
               />
 
               <Image
                 src={News6}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+               className="h-44 rounded-2xl max-w-44"
               />
             </div>
         </div>
@@ -145,25 +145,25 @@ export default function NewsPage() {
               <Image
                 src={News7}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+               className="h-44 rounded-2xl max-w-44"
               />
 
               <Image
                 src={News8}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+               className="h-44 rounded-2xl max-w-44"
               />
 
               <Image
                 src={News9}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+               className="h-44 rounded-2xl max-w-44"
               />
 
               <Image
                 src={News10}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+               className="h-44 rounded-2xl max-w-44"
               />
             </div>
         </div>
@@ -195,31 +195,31 @@ export default function NewsPage() {
               <Image
                 src={News11}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+               className="h-44 rounded-2xl max-w-44"
               />
 
               <Image
                 src={News12}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+               className="h-44 rounded-2xl max-w-44"
               />
 
               <Image
                 src={News13}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+               className="h-44 rounded-2xl max-w-44"
               />
 
               <Image
                 src={News14}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+               className="h-44 rounded-2xl max-w-44"
               />
 
               <Image
                 src={News15}
                 alt="imgMuongThanh"
-                className="h-45 rounded-2xl w-auto"
+               className="h-44 rounded-2xl max-w-44"
               />
             </div>
         </div>
