@@ -37,10 +37,6 @@ export default function AboutPage() {
       <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0 pb-7 px-7 sm:px-16 lg:px-32">
         <div className="flex flex-col items-center gap-7">
           <div className="flex flex-col gap-1 items-center justify-center">
-            <h3 className="pt-4 text-2xl font-bold leading-8 !text-[#031E2F] tracking-tight">
-              {t("t27")}
-            </h3>
-
             <p className="!text-gray-800 !font-serif !italic">{t("t26")}</p>
           </div>
           
