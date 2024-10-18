@@ -7,15 +7,6 @@ import imgAbout1 from "../../../../public/images/projects/about-1.jpg";
 import imgAbout2 from "../../../../public/images/projects/about-2.jpg";
 import imgAbout3 from "../../../../public/images/projects/about-3.jpg";
 import imgAbout4 from "../../../../public/images/projects/about-4.jpg";
-import imgPhong1 from "../../../../public/images/home/phong1.jpeg";
-import imgPhong2 from "../../../../public/images/home/phong2.jpeg";
-import imgPhong3 from "../../../../public/images/home/phong3.jpeg";
-import imgPhong4 from "../../../../public/images/home/phong4.jpeg";
-import imgPhong5 from "../../../../public/images/home/phong5.jpeg";
-import imgPhong6 from "../../../../public/images/home/phong6.jpeg";
-import imgPhong7 from "../../../../public/images/home/phong7.jpeg";
-import imgPhong8 from "../../../../public/images/home/phong8.jpeg";
-import imgPhong9 from "../../../../public/images/home/phong9.jpg";
 import imgFatory1 from "../../../../public/images/factory/factory_1.jpg";
 import imgFatory2 from "../../../../public/images/factory/factory_2.jpg";
 import imgFatory3 from "../../../../public/images/factory/factory_3.jpg";
@@ -37,6 +28,12 @@ export default function AboutPage() {
 
   return (
     <PageLayout>
+      <div className="flex flex-col gap-4 xl:gap-x-8 xl:space-y-0 pb-7 px-7 sm:px-16 lg:px-32">
+        <h3 className="pt-4 text-2xl font-bold leading-8 !text-[#031E2F] tracking-tight">
+              {t("t27")}
+        </h3>
+      </div>
+      
       <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0 pb-7 px-7 sm:px-16 lg:px-32">
         <div className="flex flex-col items-center gap-7">
           <div className="flex flex-col gap-1 items-center justify-center">
