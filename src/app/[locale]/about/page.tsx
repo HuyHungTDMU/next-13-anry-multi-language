@@ -29,7 +29,7 @@ export default function AboutPage() {
     <PageLayout>
       <div className="flex flex-col gap-4 xl:gap-x-8 xl:space-y-0 pb-7 px-7 sm:px-16 lg:px-32">
         <h3 className="pt-4 text-2xl font-bold leading-8 !text-[#031E2F] tracking-tight">
-              {t("t27")}
+          {t("t27")}
         </h3>
 
         <AnimatedText
@@ -49,124 +49,119 @@ export default function AboutPage() {
               alt="about"
               className="w-4/5 h-auto rounded-xl"
             />
-        </div>
+          </div>
 
-        <AnimatedText
+          <AnimatedText
             text={"t44"}
             className="mb-5 !font-serif !italic !text-[#031E2F]"
-        />
-        <AnimatedText
+          />
+          <AnimatedText
             text={"t29"}
             className="mb-5 !font-serif !italic !text-[#031E2F]"
-        />
-        <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t30")}</p>
-        </div> 
+          />
+          <div className="flex lg:flex-row flex-col gap-4">
+            <p className="w-full">{t("t30")}</p>
+          </div>
 
-        <div className="space-y-7">
-          <div className="flex flex-col-reverse lg:flex-row gap-4">
+          <div className="space-y-7">
+            <div className="flex flex-col-reverse lg:flex-row gap-4">
               <p>{t("t26")}</p>
               <Image
                 src={imgAbout2}
                 alt="about"
                 className="w-4/5 h-auto rounded-xl"
               />
+            </div>
+
+            <AnimatedText
+              text={"t44"}
+              className="mb-5 !font-serif !italic !text-[#031E2F]"
+            />
+            <AnimatedText
+              text={"t46"}
+              className="mb-5 !font-serif !italic !text-[#031E2F]"
+            />
+            <div className="prose max-w-none pb-8 dark:prose-invert xl:col-span-2 flex flex-col">
+              <p className="w-full">{t("t43")}</p>
+            </div>
+            <div className="flex gap-4 flex-wrap items-center justify-center">
+              <Image
+                src={imgAbout3}
+                alt="about"
+                className="h-60 rounded-2xl w-auto"
+              />
+              <MotionImage
+                src={imgFatory1}
+                alt="imgMuongThanh"
+                whileHover={{ scale: 1 }}
+                className="h-60 rounded-2xl w-auto"
+              />
+              <MotionImage
+                src={imgFatory2}
+                alt="imgMuongThanh"
+                whileHover={{ scale: 1 }}
+                className="h-60 rounded-2xl w-auto"
+              />
+              <MotionImage
+                src={imgFatory3}
+                alt="imgMuongThanh"
+                whileHover={{ scale: 1 }}
+                className="h-60 rounded-2xl w-auto"
+              />
+              <MotionImage
+                src={imgFatory4}
+                alt="imgMuongThanh"
+                whileHover={{ scale: 1 }}
+                className="h-60 rounded-2xl w-auto"
+              />
+              <MotionImage
+                src={imgFatory5}
+                alt="imgMuongThanh"
+                whileHover={{ scale: 1 }}
+                className="h-60 rounded-2xl w-auto"
+              />
+              <MotionImage
+                src={imgFatory6}
+                alt="imgMuongThanh"
+                whileHover={{ scale: 1 }}
+                className="h-60 rounded-2xl w-auto"
+              />
+              <MotionImage
+                src={imgFatory7}
+                alt="imgMuongThanh"
+                whileHover={{ scale: 1 }}
+                className="h-60 rounded-2xl w-auto"
+              />
+              <MotionImage
+                src={imgFatory8}
+                alt="imgMuongThanh"
+                whileHover={{ scale: 1 }}
+                className="h-60 rounded-2xl w-auto"
+              />
+              <MotionImage
+                src={imgFatory9}
+                alt="imgMuongThanh"
+                whileHover={{ scale: 1 }}
+                className="h-60 rounded-2xl w-auto"
+              />
+              <MotionImage
+                src={imgFatory10}
+                alt="imgMuongThanh"
+                whileHover={{ scale: 1 }}
+                className="h-60 rounded-2xl w-auto"
+              />
+            </div>
           </div>
 
-        <AnimatedText
-            text={"t44"}
-            className="mb-5 !font-serif !italic !text-[#031E2F]"
-        />
-        <AnimatedText
-            text={"t46"}
-            className="mb-5 !font-serif !italic !text-[#031E2F]"
-        />
-        <div className="prose max-w-none pb-8 dark:prose-invert xl:col-span-2 flex flex-col">
-            <p className="w-full">{t("t43")}</p>
-         </div>
-        <div className="flex gap-4 flex-wrap items-center justify-center">
-            <Image
-              src={imgAbout3}
-              alt="about"
-              className="h-60 rounded-2xl w-auto"
-             />
-            <MotionImage
-              src={imgFatory1}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 1 }}
-              className="h-60 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgFatory2}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 1 }}
-              className="h-60 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgFatory3}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 1 }}
-              className="h-60 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgFatory4}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 1 }}
-              className="h-60 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgFatory5}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 1 }}
-              className="h-60 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgFatory6}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 1 }}
-              className="h-60 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgFatory7}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 1 }}
-              className="h-60 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgFatory8}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 1 }}
-              className="h-60 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgFatory9}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 1 }}
-              className="h-60 rounded-2xl w-auto"
-            />
-            <MotionImage
-              src={imgFatory10}
-              alt="imgMuongThanh"
-              whileHover={{ scale: 1 }}
-              className="h-60 rounded-2xl w-auto"
-            />
+          <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0 pb-7 px-7 sm:px-16 lg:px-32">
+            <div className="flex flex-col items-center gap-7">
+              <div className="flex flex-col gap-1 items-center justify-center">
+                <p className="!text-gray-800 !font-serif !italic">{t("t26")}</p>
+              </div>
+            </div>
           </div>
-        
 
-      </div>
-      
-      <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0 pb-7 px-7 sm:px-16 lg:px-32">
-        <div className="flex flex-col items-center gap-7">
-          <div className="flex flex-col gap-1 items-center justify-center">
-            <p className="!text-gray-800 !font-serif !italic">{t("t26")}</p>
-         </div>
-      </div>
-        </div>
-
-          <div className="flex gap-4 flex-wrap items-center justify-center">
-            
-          </div>
+          <div className="flex gap-4 flex-wrap items-center justify-center"></div>
 
           <AnimatedText
             text={"t42"}
@@ -182,8 +177,8 @@ export default function AboutPage() {
             alt="certificate"
             className="w-auto h-auto rounded-xl"
           />
-           <p>{t("t47")}</p>
-           <p>{t("t48")}</p>
+          <p>{t("t47")}</p>
+          <p>{t("t48")}</p>
         </div>
       </div>
     </PageLayout>

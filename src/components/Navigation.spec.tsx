@@ -1,6 +1,6 @@
-import {render} from "@testing-library/react";
+import { render } from "@testing-library/react";
 import pick from "lodash/pick";
-import {NextIntlClientProvider} from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 import messages from "../../messages/en.json";
 import NavBar from "./NavBar";
 

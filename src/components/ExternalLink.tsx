@@ -4,7 +4,7 @@ type Props = {
   href: string;
 };
 
-export default function ExternalLink({description, href, title}: Props) {
+export default function ExternalLink({ description, href, title }: Props) {
   return (
     <a
       className="inline-block rounded-md border border-gray-700 p-8 transition-colors hover:border-gray-400"

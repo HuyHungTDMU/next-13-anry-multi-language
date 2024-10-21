@@ -9,7 +9,9 @@
     "test:playwright": "playwright test",
     "test:jest": "jest",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prettier:check": "prettier . --check",
+    "prettier:fix": "prettier . --write"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^40.0.0",

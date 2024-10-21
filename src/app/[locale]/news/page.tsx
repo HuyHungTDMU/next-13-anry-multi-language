@@ -1,6 +1,5 @@
 "use client";
 
-
 import Image from "next/image";
 import PageLayout from "components/PageLayout";
 import AnimatedText from "../../../components/AnimatedText";
@@ -26,7 +25,6 @@ import News13 from "../../../../public/images/news/News13.jpg";
 import News14 from "../../../../public/images/news/News14.jpg";
 import News15 from "../../../../public/images/news/News15.jpg";
 
-
 import { useTranslations } from "next-intl";
 
 const MotionImage = motion(Image);
@@ -37,13 +35,9 @@ export default function NewsPage() {
     <PageLayout>
       <div className="flex flex-col gap-4 xl:gap-x-8 xl:space-y-0 pb-7 px-7 sm:px-16 lg:px-32">
         <div className="h-[400px]">
-          <Image
-            src={imgBanner}
-            alt="banner"
-            className="max-h-[400px]"
-          />
+          <Image src={imgBanner} alt="banner" className="max-h-[400px]" />
         </div>
-                
+
         {/*<div className="space-y-7">
           <div className="flex flex-col-reverse lg:flex-row gap-4">
             <Image
@@ -63,7 +57,7 @@ export default function NewsPage() {
             </div>
         </div> 
         */}
-         <AnimatedText
+        <AnimatedText
           text={"t44"}
           className="!-mt-12 !font-bold !text-[#031E2F]"
         />
@@ -78,52 +72,50 @@ export default function NewsPage() {
 
         <div className="w-full flex flex-col items-center justify-center space-y-4">
           <p className="px-4 w-full"></p>
-            <div className="gap-9 flex flex-wrap items-center justify-center">
-              <Image
-                src={News1}
-                alt="imgMuongThanh"
-               className="h-60 rounded-2xl w-auto"
-              />
+          <div className="gap-9 flex flex-wrap items-center justify-center">
+            <Image
+              src={News1}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
 
-              <Image
-                src={News2}
-                alt="imgMuongThanh"
-               className="h-60 rounded-2xl w-auto"
-              />
+            <Image
+              src={News2}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
 
-              <Image
-                src={News3}
-                alt="imgMuongThanh"
-                className="h-60 rounded-2xl w-auto"
-              />
+            <Image
+              src={News3}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
 
-              <Image
-                src={News4}
-                alt="imgMuongThanh"
-               className="h-60 rounded-2xl w-auto"
-              />
-                            <Image
-                src={News5}
-                alt="imgMuongThanh"
-               className="h-60 rounded-2xl w-auto"
-              />
+            <Image
+              src={News4}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
+            <Image
+              src={News5}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
 
-              <Image
-                src={News6}
-                alt="imgMuongThanh"
-               className="h-60 rounded-2xl w-auto"
-              />
-            </div>
+            <Image
+              src={News6}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
+          </div>
         </div>
 
         <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t52")}</p>
+          <p className="w-full">{t("t52")}</p>
         </div>
 
         <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t53")}</p>
+          <p className="w-full">{t("t53")}</p>
         </div>
 
         <AnimatedText
@@ -141,164 +133,153 @@ export default function NewsPage() {
 
         <div className="w-full flex flex-col items-center justify-center space-y-4">
           <p className="px-4 w-full"></p>
-            <div className="gap-9 flex flex-wrap items-center justify-center">
-              <Image
-                src={News7}
-                alt="imgMuongThanh"
-               className="h-60 rounded-2xl w-auto"
-              />
+          <div className="gap-9 flex flex-wrap items-center justify-center">
+            <Image
+              src={News7}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
 
-              <Image
-                src={News8}
-                alt="imgMuongThanh"
-               className="h-60 rounded-2xl w-auto"
-              />
+            <Image
+              src={News8}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
 
-              <Image
-                src={News9}
-                alt="imgMuongThanh"
-               className="h-60 rounded-2xl w-auto"
-              />
+            <Image
+              src={News9}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
 
-              <Image
-                src={News10}
-                alt="imgMuongThanh"
-               className="h-60 rounded-2xl w-auto"
-              />
-            </div>
+            <Image
+              src={News10}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
+          </div>
         </div>
 
         <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t56")}</p>
+          <p className="w-full">{t("t56")}</p>
         </div>
         <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t57")}</p>
+          <p className="w-full">{t("t57")}</p>
         </div>
         <AnimatedText
           text={"t44"}
           className="!-mt-12 !font-bold !text-[#031E2F]"
-        />  
+        />
         <AnimatedText
           text={"t58"}
           className="!-mt-12 !font-bold !text-[#031E2F]"
-        />    
+        />
         <AnimatedText
           text={"t59"}
           className="!-mt-12 !font-bold !text-[#031E2F]"
-        />  
+        />
 
         <div className="w-full flex flex-col items-center justify-center space-y-4">
           <p className="px-4 w-full"></p>
-            <div className="gap-9 flex flex-wrap items-center justify-center">
-              <Image
-                src={News11}
-                alt="imgMuongThanh"
-               className="h-60 rounded-2xl w-auto"
-              />
+          <div className="gap-9 flex flex-wrap items-center justify-center">
+            <Image
+              src={News11}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
 
-              <Image
-                src={News12}
-                alt="imgMuongThanh"
-               className="h-60 rounded-2xl w-auto"
-              />
+            <Image
+              src={News12}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
 
-              <Image
-                src={News13}
-                alt="imgMuongThanh"
-               className="h-60 rounded-2xl w-auto"
-              />
+            <Image
+              src={News13}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
 
-              <Image
-                src={News14}
-                alt="imgMuongThanh"
-               className="h-60 rounded-2xl w-auto"
-              />
+            <Image
+              src={News14}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
 
-              <Image
-                src={News15}
-                alt="imgMuongThanh"
-               className="h-60 rounded-2xl w-auto"
-              />
-            </div>
+            <Image
+              src={News15}
+              alt="imgMuongThanh"
+              className="h-60 rounded-2xl w-auto"
+            />
+          </div>
         </div>
-        
+
         <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t60")}</p>
+          <p className="w-full">{t("t60")}</p>
         </div>
         <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t61")}</p>
+          <p className="w-full">{t("t61")}</p>
         </div>
         <AnimatedText
           text={"t44"}
           className="!-mt-12 !font-bold !text-[#031E2F]"
-        />  
+        />
         <AnimatedText
           text={"t62"}
           className="!-mt-12 !font-bold !text-[#031E2F]"
-        />  
+        />
         <AnimatedText
           text={"t63"}
           className="!-mt-12 !font-bold !text-[#031E2F]"
-        />  
+        />
         <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t64")}</p>
+          <p className="w-full">{t("t64")}</p>
         </div>
         <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t65")}</p>
+          <p className="w-full">{t("t65")}</p>
         </div>
         <AnimatedText
           text={"t44"}
           className="!-mt-12 !font-bold !text-[#031E2F]"
-        />  
+        />
         <AnimatedText
           text={"t66"}
           className="!-mt-12 !font-bold !text-[#031E2F]"
-        />  
+        />
         <AnimatedText
           text={"t67"}
           className="!-mt-12 !font-bold !text-[#031E2F]"
-        />  
+        />
         <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t68")}</p>
+          <p className="w-full">{t("t68")}</p>
         </div>
         <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t69")}</p>
+          <p className="w-full">{t("t69")}</p>
         </div>
         <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t70")}</p>
+          <p className="w-full">{t("t70")}</p>
         </div>
         <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t71")}</p>
+          <p className="w-full">{t("t71")}</p>
         </div>
         <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t72")}</p>
+          <p className="w-full">{t("t72")}</p>
         </div>
         <AnimatedText
           text={"t44"}
           className="!-mt-12 !font-bold !text-[#031E2F]"
-        />  
+        />
         <AnimatedText
           text={"t41"}
           className="!-mt-12 !font-bold !text-[#031E2F]"
-        />    
+        />
 
-        <div style={{ width: '100%', height: '100vh', overflow: 'hidden' }}>
+        <div style={{ width: "100%", height: "100vh", overflow: "hidden" }}>
           <iframe
             style={{
-              width: '100%',
-              height: '100%',
-              border: 'none', // Optional: remove iframe border
+              width: "100%",
+              height: "100%",
+              border: "none", // Optional: remove iframe border
             }}
             src="https://www.youtube.com/embed/HYt_KghUyeU?si=s3yBSHT2r5F2wJpB"
             frameBorder="0"
@@ -307,7 +288,6 @@ export default function NewsPage() {
             title="Embedded youtube"
           />
         </div>
-
 
         {/*<div dangerouslySetInnerHTML={{ __html: data }} />}
         {/*{data?.length ? (*/}

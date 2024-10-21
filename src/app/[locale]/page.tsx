@@ -69,7 +69,6 @@ import DialogPreViewFactory from "../../components/DialogPreviewFactory";
 import ListBanner from "components/ListBanner";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
-
 const MotionImage = motion(Image);
 
 const images = [
@@ -106,7 +105,6 @@ const Slideshow = () => {
     </div>
   );
 };
-
 
 function ParallaxText({
   children,
@@ -217,18 +215,18 @@ export default function IndexPage() {
               <p className="px-4 w-full"></p>
 
               <div className="gap-9 flex flex-wrap">
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col items-center uppercase" >
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col items-center uppercase">
                   <MotionImage
                     src={Bed1}
                     alt="imgMuongThanh"
-                    whileHover={{ scale: 2}}
+                    whileHover={{ scale: 2 }}
                     onClick={() => onPreviewImage(Bed1)}
                     className="h-60 rounded-2xl w-auto"
                   />
-                   <h3> {t("t100")} </h3>
+                  <h3> {t("t100")} </h3>
                 </div>
 
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col items-center uppercase" >
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col items-center uppercase">
                   <MotionImage
                     src={Bed2}
                     alt="imgMuongThanh"
@@ -238,7 +236,7 @@ export default function IndexPage() {
                   />
                   <h3> {t("t101")} </h3>
                 </div>
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col items-center uppercase" >
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col items-center uppercase">
                   <MotionImage
                     src={Bed3}
                     alt="imgMuongThanh"
@@ -247,8 +245,8 @@ export default function IndexPage() {
                     className="h-60 rounded-2xl w-auto"
                   />
                   <h3> {t("t102")} </h3>
-                </div>  
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col items-center uppercase" >
+                </div>
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col items-center uppercase">
                   <MotionImage
                     src={Bed4}
                     alt="imgMuongThanh"
@@ -258,7 +256,7 @@ export default function IndexPage() {
                   />
                   <h3> {t("t103")} </h3>
                 </div>
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col items-center uppercase" >
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col items-center uppercase">
                   <MotionImage
                     src={Bed5}
                     alt="imgMuongThanh"
@@ -267,8 +265,8 @@ export default function IndexPage() {
                     className="h-60 rounded-2xl w-auto"
                   />
                   <h3> {t("t104")} </h3>
-                </div>  
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col items-center uppercase" >
+                </div>
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col items-center uppercase">
                   <MotionImage
                     src={Bed6}
                     alt="imgMuongThanh"
@@ -277,7 +275,7 @@ export default function IndexPage() {
                     className="h-60 rounded-2xl w-auto"
                   />
                   <h3> {t("t105")} </h3>
-                </div>  
+                </div>
               </div>
             </div>
 
@@ -285,7 +283,7 @@ export default function IndexPage() {
               <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">
                 {t("t19")}:
               </p>
-            </div> 
+            </div>
             <div className="w-full flex flex-col items-center justify-center space-y-4">
               <p className="px-4 w-full"></p>
 
@@ -305,7 +303,7 @@ export default function IndexPage() {
                   className="h-60 rounded-2xl w-auto"
                 />
               </div>
-            </div> 
+            </div>
 
             <div className="w-full flex items-center pt-10">
               <p className="text-xl rounded-r-2xl px-4 py-1 font-normal bg-[#031E2F] text-white !font-serif !italic">
@@ -317,7 +315,7 @@ export default function IndexPage() {
               <p className="px-4 w-full"></p>
 
               <div className="gap-9 flex flex-wrap items-center justify-center">
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col">
                   <MotionImage
                     src={Bath1}
                     alt="imgMuongThanh"
@@ -326,8 +324,8 @@ export default function IndexPage() {
                     className="h-60 rounded-2xl w-auto"
                   />
                   <h3> {t("t106")} </h3>
-                </div>  
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                </div>
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col">
                   <MotionImage
                     src={Bath2}
                     alt="imgMuongThanh"
@@ -336,8 +334,8 @@ export default function IndexPage() {
                     className="h-60 rounded-2xl w-auto"
                   />
                   <h3> {t("t107")} </h3>
-                </div>  
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                </div>
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col">
                   <MotionImage
                     src={Bath3}
                     alt="imgMuongThanh"
@@ -346,8 +344,8 @@ export default function IndexPage() {
                     className="h-60 rounded-2xl w-auto"
                   />
                   <h3> {t("t108")} </h3>
-                </div>  
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                </div>
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col">
                   <MotionImage
                     src={Bath4}
                     alt="imgMuongThanh"
@@ -356,8 +354,8 @@ export default function IndexPage() {
                     className="h-60 rounded-2xl w-auto"
                   />
                   <h3> {t("t109")} </h3>
-                </div>  
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                </div>
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col">
                   <MotionImage
                     src={Bath5}
                     alt="imgMuongThanh"
@@ -380,7 +378,7 @@ export default function IndexPage() {
               <p className="px-4 w-full"></p>
 
               <div className="gap-9 flex flex-wrap items-center justify-center">
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col">
                   <MotionImage
                     src={Banquet1}
                     alt="imgMuongThanh"
@@ -390,7 +388,7 @@ export default function IndexPage() {
                   />
                   <h3> {t("t111")} </h3>
                 </div>
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col">
                   <MotionImage
                     src={Banquet2}
                     alt="imgMuongThanh"
@@ -400,7 +398,7 @@ export default function IndexPage() {
                   />
                   <h3> {t("t112")} </h3>
                 </div>
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col">
                   <MotionImage
                     src={Banquet3}
                     alt="imgMuongThanh"
@@ -422,7 +420,7 @@ export default function IndexPage() {
             <div className="w-full flex flex-col items-center justify-center space-y-4">
               <p className="px-4 w-full"></p>
               <div className="gap-9 flex flex-wrap items-center justify-center">
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col">
                   <MotionImage
                     src={hospital1}
                     alt="imgMuongThanh"
@@ -432,17 +430,17 @@ export default function IndexPage() {
                   />
                   <h3> {t("t114")} </h3>
                 </div>
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
-                <MotionImage
-                  src={hospital2}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2 }}
-                  onClick={() => onPreviewImage(hospital2)}
-                  className="h-60 rounded-2xl w-auto"
-                />
-                <h3> {t("t114")} </h3>
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col">
+                  <MotionImage
+                    src={hospital2}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 2 }}
+                    onClick={() => onPreviewImage(hospital2)}
+                    className="h-60 rounded-2xl w-auto"
+                  />
+                  <h3> {t("t114")} </h3>
                 </div>
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col">
                   <MotionImage
                     src={hospital3}
                     alt="imgMuongThanh"
@@ -452,7 +450,7 @@ export default function IndexPage() {
                   />
                   <h3> {t("t115")} </h3>
                 </div>
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col">
                   <MotionImage
                     src={hospital4}
                     alt="imgMuongThanh"
@@ -462,7 +460,7 @@ export default function IndexPage() {
                   />
                   <h3> {t("t116")} </h3>
                 </div>
-                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col">
                   <MotionImage
                     src={hospital5}
                     alt="imgMuongThanh"

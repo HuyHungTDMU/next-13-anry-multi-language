@@ -110,7 +110,11 @@ const NavBar = () => {
       </nav>
 
       <nav className="gap-5 flex items-center">
-        <img src="/images/logo_hiephoikhan.png" alt="logo-hiephoikhan" className="w-[50px] h-[50px] object-center object-cover rounded"/> 
+        <img
+          src="/images/logo_hiephoikhan.png"
+          alt="logo-hiephoikhan"
+          className="w-[50px] h-[50px] object-center object-cover rounded"
+        />
         <LocaleSwitcher />
       </nav>
     </header>
