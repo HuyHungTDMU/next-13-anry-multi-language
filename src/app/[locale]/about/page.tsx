@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import imgAbout1 from "../../../../public/images/projects/about-1.jpg";
 import imgAbout2 from "../../../../public/images/projects/about-2.jpg";
 import imgAbout3 from "../../../../public/images/projects/about-3.jpg";
-import imgAbout4 from "../../../../public/images/projects/about-4.jpg";
 import imgFatory1 from "../../../../public/images/factory/factory_1.jpg";
 import imgFatory2 from "../../../../public/images/factory/factory_2.jpg";
 import imgFatory3 from "../../../../public/images/factory/factory_3.jpg";
