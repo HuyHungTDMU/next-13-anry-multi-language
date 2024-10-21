@@ -32,43 +32,66 @@ export default function AboutPage() {
         <h3 className="pt-4 text-2xl font-bold leading-8 !text-[#031E2F] tracking-tight">
               {t("t27")}
         </h3>
-      </div>
-      
-      <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0 pb-7 px-7 sm:px-16 lg:px-32">
-        <div className="flex flex-col items-center gap-7">
-          <div className="flex flex-col gap-1 items-center justify-center">
-            <p className="!text-gray-800 !font-serif !italic">{t("t26")}</p>
-          </div>
-          
-          <AnimatedText
+
+        <AnimatedText
+          text={"t33"}
+          className="mb-5 !font-serif !italic !text-[#031E2F]"
+        />
+
+        <h2 className="mb-7 text-xl !font-serif !italic !text-[#031E2F] ">
+          {t("t28")}
+        </h2>
+
+        <div className="space-y-7">
+          <div className="flex flex-col-reverse lg:flex-row gap-4">
+            <p>{t("t26")}</p>
+            <Image
+              src={imgAbout1}
+              alt="about"
+              className="w-4/5 h-auto rounded-xl"
+            />
+        </div>
+
+        <AnimatedText
+            text={"t44"}
+            className="mb-5 !font-serif !italic !text-[#031E2F]"
+        />
+        <AnimatedText
             text={"t29"}
             className="mb-5 !font-serif !italic !text-[#031E2F]"
-          />
+        />
+        <div className="flex lg:flex-row flex-col gap-4">
+              <p className="w-full">
+                {t("t30")}</p>
+        </div> 
 
-          <div className="space-y-7">
-            <div className="flex flex-col-reverse lg:flex-row gap-4">
+        <div className="space-y-7">
+          <div className="flex flex-col-reverse lg:flex-row gap-4">
               <p>{t("t26")}</p>
               <Image
                 src={imgAbout2}
                 alt="about"
-                className="w-full h-auto rounded-xl"
+                className="w-4/5 h-auto rounded-xl"
               />
-            </div>
+          </div>
 
-            <div className="flex lg:flex-row flex-col gap-4">
-              <p className="w-full">
-                {t("t30")}</p>
-            </div>
-
+        <AnimatedText
+            text={"t44"}
+            className="mb-5 !font-serif !italic !text-[#031E2F]"
+        />
+        <AnimatedText
+            text={"t46"}
+            className="mb-5 !font-serif !italic !text-[#031E2F]"
+        />
+        <div className="prose max-w-none pb-8 dark:prose-invert xl:col-span-2 flex flex-col">
+            <p className="w-full">{t("t43")}</p>
+         </div>
+        <div className="flex gap-4 flex-wrap items-center justify-center">
             <Image
               src={imgAbout3}
               alt="about"
-              className="w-auto h-auto rounded-xl"
-            />
-          </div>
-
-
-          <div className="flex gap-4 flex-wrap items-center justify-center">
+              className="h-60 rounded-2xl w-auto"
+             />
             <MotionImage
               src={imgFatory1}
               alt="imgMuongThanh"
@@ -93,45 +116,6 @@ export default function AboutPage() {
               whileHover={{ scale: 1 }}
               className="h-60 rounded-2xl w-auto"
             />
-          </div>
-
-        </div>
-
-        <div className="prose max-w-none pb-8 dark:prose-invert xl:col-span-2 flex flex-col">
-          
-          <AnimatedText
-            text={"t33"}
-            className="mb-5 !font-serif !italic !text-[#031E2F]"
-          />
-
-          <h2 className="mb-7 text-xl !font-serif !italic !text-[#031E2F]">
-            {t("t28")}
-          </h2>
-
-          <div className="space-y-7">
-            <div className="flex flex-col-reverse lg:flex-row gap-4">
-              <p>{t("t26")}</p>
-              <Image
-                src={imgAbout1}
-                alt="about"
-                className="w-full h-auto rounded-xl"
-              />
-            </div>
-
-            <AnimatedText
-            text={"t46"}
-            className="mb-5 !font-serif !italic !text-[#031E2F]"
-            />
-            <p className="w-full">{t("t43")}</p>
-            <p className="w-full">{t("t44")}</p>
-            <p className="w-full">{t("t45")}</p>
-            <p className="w-full">{t("t44")}</p>
-            <p className="w-full">{t("t45")}</p>
-            <p className="w-full">{t("t44")}</p>
-            <p className="w-full">{t("t45")}</p>
-         </div>
-
-          <div className="flex gap-4 flex-wrap items-center justify-center">
             <MotionImage
               src={imgFatory5}
               alt="imgMuongThanh"
@@ -168,6 +152,21 @@ export default function AboutPage() {
               whileHover={{ scale: 1 }}
               className="h-60 rounded-2xl w-auto"
             />
+          </div>
+        
+
+      </div>
+      
+      <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0 pb-7 px-7 sm:px-16 lg:px-32">
+        <div className="flex flex-col items-center gap-7">
+          <div className="flex flex-col gap-1 items-center justify-center">
+            <p className="!text-gray-800 !font-serif !italic">{t("t26")}</p>
+         </div>
+      </div>
+        </div>
+
+          <div className="flex gap-4 flex-wrap items-center justify-center">
+            
           </div>
 
           <AnimatedText
