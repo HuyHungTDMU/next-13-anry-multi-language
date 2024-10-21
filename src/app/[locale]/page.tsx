@@ -452,16 +452,6 @@ export default function IndexPage() {
                 </div>
                 <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col items-center uppercase">
                   <MotionImage
-                    src={hospital4}
-                    alt="imgMuongThanh"
-                    whileHover={{ scale: 2 }}
-                    onClick={() => onPreviewImage(hospital4)}
-                    className="h-60 rounded-2xl w-auto"
-                  />
-                  <h3> {t("t117")} </h3>
-                </div>
-                <div className="head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col items-center uppercase">
-                  <MotionImage
                     src={hospital5}
                     alt="imgMuongThanh"
                     whileHover={{ scale: 2 }}
