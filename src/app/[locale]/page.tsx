@@ -217,42 +217,58 @@ export default function IndexPage() {
               <p className="px-4 w-full"></p>
 
               <div className="gap-9 flex flex-wrap items-center justify-center">
-                <MotionImage
-                  src={Bed1}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2}}
-                  onClick={() => onPreviewImage(Bed1)}
-                  className="h-60 rounded-2xl w-auto"
-                />
+                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col" >
+                  <MotionImage
+                    src={Bed1}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 2}}
+                    onClick={() => onPreviewImage(Bed1)}
+                    className="h-60 rounded-2xl w-auto"
+                  />
+                   <h3> {t("t100")} </h3>
+                </div>
 
-                <MotionImage
-                  src={Bed2}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2 }}
-                  onClick={() => onPreviewImage(Bed2)}
-                  className="h-60 rounded-2xl w-auto"
-                />
-                <MotionImage
-                  src={Bed3}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2 }}
-                  onClick={() => onPreviewImage(Bed3)}
-                  className="h-60 rounded-2xl w-auto"
-                />
-                <MotionImage
-                  src={Bed4}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2 }}
-                  onClick={() => onPreviewImage(Bed4)}
-                  className="h-60 rounded-2xl w-auto"
-                />
-                <MotionImage
-                  src={Bed5}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2 }}
-                  onClick={() => onPreviewImage(Bed5)}
-                  className="h-60 rounded-2xl w-auto"
-                />
+                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col" >
+                  <MotionImage
+                    src={Bed2}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 2 }}
+                    onClick={() => onPreviewImage(Bed2)}
+                    className="h-60 rounded-2xl w-auto"
+                  />
+                  <h3> {t("t101")} </h3>
+                </div>
+                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col" >
+                  <MotionImage
+                    src={Bed3}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 2 }}
+                    onClick={() => onPreviewImage(Bed3)}
+                    className="h-60 rounded-2xl w-auto"
+                  />
+                  <h3> {t("t102")} </h3>
+                </div>  
+                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col" >
+                  <MotionImage
+                    src={Bed4}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 2 }}
+                    onClick={() => onPreviewImage(Bed4)}
+                    className="h-60 rounded-2xl w-auto"
+                  />
+                  <h3> {t("t103")} </h3>
+                </div>
+                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col" >
+                  <MotionImage
+                    src={Bed5}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 2 }}
+                    onClick={() => onPreviewImage(Bed5)}
+                    className="h-60 rounded-2xl w-auto"
+                  />
+                  <h3> {t("t104")} </h3>
+                </div>  
+                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 flex flex-col" >
                 <MotionImage
                   src={Bed6}
                   alt="imgMuongThanh"
@@ -260,13 +276,8 @@ export default function IndexPage() {
                   onClick={() => onPreviewImage(Bed6)}
                   className="h-60 rounded-2xl w-auto"
                 />
-                <MotionImage
-                  src={Bed7}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2 }}
-                  onClick={() => onPreviewImage(Bed7)}
-                  className="h-60 rounded-2xl w-auto"
-                />
+                <h3> {t("t105")} </h3>
+                </div>  
               </div>
             </div>
 
@@ -286,6 +297,13 @@ export default function IndexPage() {
                   onClick={() => onPreviewImage(Bed8)}
                   className="h-60 rounded-2xl w-auto"
                 />
+                <MotionImage
+                  src={Bed7}
+                  alt="imgMuongThanh"
+                  whileHover={{ scale: 2 }}
+                  onClick={() => onPreviewImage(Bed7)}
+                  className="h-60 rounded-2xl w-auto"
+                />
               </div>
             </div> 
 
@@ -299,42 +317,56 @@ export default function IndexPage() {
               <p className="px-4 w-full"></p>
 
               <div className="gap-9 flex flex-wrap items-center justify-center">
-                <MotionImage
-                  src={Bath1}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2 }}
-                  onClick={() => onPreviewImage(Bath1)}
-                  className="h-60 rounded-2xl w-auto"
-                />
-
-                <MotionImage
-                  src={Bath2}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2 }}
-                  onClick={() => onPreviewImage(Bath2)}
-                  className="h-60 rounded-2xl w-auto"
-                />
-                <MotionImage
-                  src={Bath3}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2 }}
-                  onClick={() => onPreviewImage(Bath3)}
-                  className="h-60 rounded-2xl w-auto"
-                />
-                <MotionImage
-                  src={Bath4}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2 }}
-                  onClick={() => onPreviewImage(Bath4)}
-                  className="h-60 rounded-2xl w-auto"
-                />
-                <MotionImage
-                  src={Bath5}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2 }}
-                  onClick={() => onPreviewImage(Bath5)}
-                  className="h-60 rounded-2xl w-auto"
-                />
+                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                  <MotionImage
+                    src={Bath1}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 2 }}
+                    onClick={() => onPreviewImage(Bath1)}
+                    className="h-60 rounded-2xl w-auto"
+                  />
+                  <h3> {t("t106")} </h3>
+                </div>  
+                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                  <MotionImage
+                    src={Bath2}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 2 }}
+                    onClick={() => onPreviewImage(Bath2)}
+                    className="h-60 rounded-2xl w-auto"
+                  />
+                  <h3> {t("t107")} </h3>
+                </div>  
+                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                  <MotionImage
+                    src={Bath3}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 2 }}
+                    onClick={() => onPreviewImage(Bath3)}
+                    className="h-60 rounded-2xl w-auto"
+                  />
+                  <h3> {t("t108")} </h3>
+                </div>  
+                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                  <MotionImage
+                    src={Bath4}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 2 }}
+                    onClick={() => onPreviewImage(Bath4)}
+                    className="h-60 rounded-2xl w-auto"
+                  />
+                  <h3> {t("t109")} </h3>
+                </div>  
+                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                  <MotionImage
+                    src={Bath5}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 2 }}
+                    onClick={() => onPreviewImage(Bath5)}
+                    className="h-60 rounded-2xl w-auto"
+                  />
+                  <h3> {t("t110")} </h3>
+                </div>
               </div>
             </div>
 
@@ -348,28 +380,36 @@ export default function IndexPage() {
               <p className="px-4 w-full"></p>
 
               <div className="gap-9 flex flex-wrap items-center justify-center">
-                <MotionImage
-                  src={Banquet1}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2 }}
-                  onClick={() => onPreviewImage(Banquet1)}
-                  className="h-60 rounded-2xl w-auto"
-                />
-
-                <MotionImage
-                  src={Banquet2}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2 }}
-                  onClick={() => onPreviewImage(Banquet2)}
-                  className="h-60 rounded-2xl w-auto"
-                />
-                <MotionImage
-                  src={Banquet3}
-                  alt="imgMuongThanh"
-                  whileHover={{ scale: 2 }}
-                  onClick={() => onPreviewImage(Banquet3)}
-                  className="h-60 rounded-2xl w-auto"
-                />
+                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                  <MotionImage
+                    src={Banquet1}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 2 }}
+                    onClick={() => onPreviewImage(Banquet1)}
+                    className="h-60 rounded-2xl w-auto"
+                  />
+                  <h3> {t("t111")} </h3>
+                </div>
+                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                  <MotionImage
+                    src={Banquet2}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 2 }}
+                    onClick={() => onPreviewImage(Banquet2)}
+                    className="h-60 rounded-2xl w-auto"
+                  />
+                  <h3> {t("t112")} </h3>
+                </div>
+                <div className = "head-text !-mt-12 !font-bold !text-[#031E2F] pt-10 item-center justify-center flex flex-col" >
+                  <MotionImage
+                    src={Banquet3}
+                    alt="imgMuongThanh"
+                    whileHover={{ scale: 2 }}
+                    onClick={() => onPreviewImage(Banquet3)}
+                    className="h-60 rounded-2xl w-auto"
+                  />
+                  <h3> {t("t113")} </h3>
+                </div>
               </div>
             </div>
 
