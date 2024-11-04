@@ -46,7 +46,7 @@ const Footer = () => {
               090-900-0671 ( Mr. Jinno ){" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              0903-824-785 (Vietnamese){" "}
+              090-382-4785 (Vietnamese){" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               E-mail : anri-info @jinno.co.jp{" "}
