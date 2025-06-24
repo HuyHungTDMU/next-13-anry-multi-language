@@ -195,18 +195,6 @@ export default function NewsPage() {
             />
 
             <Image
-              src={News13}
-              alt="imgMuongThanh"
-              className="h-60 rounded-2xl w-auto"
-            />
-
-            <Image
-              src={News14}
-              alt="imgMuongThanh"
-              className="h-60 rounded-2xl w-auto"
-            />
-
-            <Image
               src={News15}
               alt="imgMuongThanh"
               className="h-60 rounded-2xl w-auto"
