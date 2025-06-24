@@ -498,18 +498,6 @@ export default function IndexPage() {
                     className="h-60 px-3 py-2 bg-white rounded-2xl w-auto"
                   />
                   <MotionImage
-                    src={parner2}
-                    alt="imgMuonparner2Thanh"
-                    whileHover={{ scale: 1.5 }}
-                    className="h-60 px-3 py-2 bg-white rounded-2xl w-auto"
-                  />
-                  <MotionImage
-                    src={parner3}
-                    alt="parner3"
-                    whileHover={{ scale: 1.5 }}
-                    className="h-60 px-3 py-2 bg-white rounded-2xl w-auto"
-                  />
-                  <MotionImage
                     src={parner4}
                     alt="parner4"
                     whileHover={{ scale: 1.5 }}
